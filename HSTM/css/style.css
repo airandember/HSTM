@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'blackout';
+    src: url('../assets/fonts/BlackoutSunrise.ttf');
+}
+
+@font-face {
+    font-family: 'garet_book';
+    src: url('../assets/fonts/Garet-Book.ttf');
+}
+
+@font-face {
+    font-family: 'garet_heavy';
+    src: url('../assets/fonts/Garet-Heavy.ttf');
+}
+
+@font-face {
+    font-family: 'highsummit';
+    src: url('../assets/fonts/HighSummit.ttf');
+}
+
+@font-face {
+    font-family: 'kenyan_it';
+    src: url('../assets/fonts/KenyanCoffeeRgIt.otf');
+}
+
+@font-face {
+    font-family: 'kenyan';
+    src: url('../assets/fonts/KenyanCoffeeRg.otf');
+}
+
+@font-face {
+    font-family: 'glock';
+    src: url('../assets/fonts/LTGlockenspielBlack.ttf');
+}
+
+@font-face {
+    font-family: 'mayonice';
+    src: url('../assets/fonts/Mayonice.ttf');
+}
+
+@font-face {
+    font-family: 'secret';
+    src: url('../assets/fonts/secretcode.ttf');
+}
+
+@font-face {
+    font-family: 'sig';
+    src: url('../assets/fonts/Thesignature.ttf');
+}
+
+@font-face {
+    font-family: 'vaughan';
+    src: url('../assets/fonts/Vaughan.otf');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    color: white;
+    font-weight: 100;
+
+}
+
+header {
+    color: #fff768;
+    font-family: sans-serif;
+    font-size: clamp(1rem, 5vw, 3rem);
+    position: relative;
+    z-index: 1; /* Ensures the header is above the heroVidCont */
+    background: #264653;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    position: relative;
+    z-index: 1; 
+    justify-content: center;
+}
+
+footer {
+    position: relative;
+    z-index: 1; /* Ensures footer is above the heroVidCont */
+}
+
+
+
+#heroVidCont {
+    position: fixed; /* Keeps it fixed in the viewport */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1; /* Ensures it stays behind everything else */
+}
+
+#heroVid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
+}
+
+.Font_Section {
+    padding: 2rem;
+    max-width: 1543px;
+}
+
+.font_Cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #264653;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 22px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.font_Cont div h1 {
+    font-size: clamp(1rem, 5vw, 3rem);
+    padding: 0 1rem;
+
+
+}
+
+.font1 {
+    font-family: 'blackout', sans-serif;   
+}
+
+.font2 {
+    font-family: 'garet_book', sans-serif;   
+}
+
+.font3 {
+    font-family: 'garet_heavy', sans-serif;   
+}
+
+.font4 {
+    font-family: 'highsummit', sans-serif;   
+}
+
+.font5 {
+    font-family: 'kenyan_it', sans-serif;   
+}
+
+.font6 {
+    font-family: 'kenyan', sans-serif;   
+}
+
+.font7 {
+    font-family: 'glock', sans-serif;   
+}
+
+.font8 {
+    font-family: 'mayonice', sans-serif;   
+}
+
+.font9 {
+    font-family: 'secret', sans-serif;   
+}
+
+.font10 {
+    font-family: 'sig', sans-serif;   
+}
+
+.font11 {
+    font-family: 'vaughan', sans-serif;   
+}
+
+.Color_Section {
+    background-color: white;
+    border-radius: 45px;
+    padding: 3rem;
+    max-width: 1543px;
+    color: black;
+}
+
+.color_paletteCont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.color_paletteCont div {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.color_primary1 {
+    background-color: #264653;
+    color: white;
+}
+
+.color_primary2 {
+    background-color: #FFF768;
+    color: black;
+}
+
+.color_accent1 {
+    background-color: #FAB2EA;
+    color: black;
+}
+
+.color_accent2 {
+    background-color: #7D345A;
+    color: white;
+}
+
+.color_bw {
+    background-color: linear-gradient(black 50%, white 50%);
+    color: black;
+}
