@@ -39,8 +39,9 @@
 }
 
 @font-face {
-    font-family: 'secret';
-    src: url('../assets/fonts/secretcode.ttf');
+    font-family: 'secrcode';
+    src: url('../assets/fonts/secrcode.otf');
+    font-weight: lighter;
 }
 
 @font-face {
@@ -68,6 +69,25 @@ html {
 
 }
 
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
 header {
     color: #fff768;
     font-family: sans-serif;
@@ -76,7 +96,10 @@ header {
     z-index: 1; /* Ensures the header is above the heroVidCont */
     background: #264653;
     text-align: center;
+    padding: 2rem;
 }
+
+
 
 main {
     display: grid;
@@ -108,6 +131,15 @@ footer {
     object-fit: cover; /* Ensures the image covers the entire container without distortion */
 }
 
+.Header_Section {
+    display: grid;
+}
+
+.section_title {
+    font-size: 4rem;
+    font-family: 'vaughan';
+}
+
 .Font_Section {
     padding: 2rem;
     max-width: 1543px;
@@ -119,6 +151,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: #264653;
+    border: #FF8C36 solid 3px;
     margin: 1rem;
     padding: 2rem;
     border-radius: 22px;
@@ -132,6 +165,10 @@ footer {
     padding: 0 1rem;
 
 
+}
+
+.img_Logo {
+    border-radius: 50px;
 }
 
 .font1 {
@@ -167,7 +204,7 @@ footer {
 }
 
 .font9 {
-    font-family: 'secret', sans-serif;   
+    font-family: 'secrcode', sans-serif;   
 }
 
 .font10 {
@@ -184,17 +221,19 @@ footer {
     padding: 3rem;
     max-width: 1543px;
     color: black;
+    display: block;
 }
 
-.color_paletteCont {
+.color_paletteCont, .primaries {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     padding: 3rem;
+
 }
 
-.color_paletteCont div {
+.color_paletteCont div, .primaries div {
     display: flex;
     height: 200px;
     width: 200px;
@@ -202,6 +241,8 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    box-shadow: 2px 2px 15px black;
+
 }
 
 .color_primary1 {
@@ -210,7 +251,17 @@ footer {
 }
 
 .color_primary2 {
+    background-color: #7D345A;
+    color: white;
+}
+
+.color_primary3 {
     background-color: #FFF768;
+    color: black;
+}
+
+.color_primary4 {
+    background-color: #A3FFFA;
     color: black;
 }
 
@@ -220,11 +271,33 @@ footer {
 }
 
 .color_accent2 {
-    background-color: #7D345A;
+    background-color: #455B46;
     color: white;
 }
 
-.color_bw {
-    background-color: linear-gradient(black 50%, white 50%);
+.color_accent3 {
+    background-color: #505C71;
+    color: white;
+}
+
+.color_accent4 {
+    background-color: #DF52FF;
+    color: white;
+}
+
+.color_accent5 {
+    background-color: #FF8C36;
+    color: white;
+}
+
+
+.color_b {
+    background-color: black;
+    color: white;
+}
+
+.color_w {
+    background-color: white;
     color: black;
+    box-shadow: 2px 2px 15px black;
 }
