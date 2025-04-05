@@ -303,5 +303,13 @@ footer {
 }
 
 .web1 {
-    width: 70vw;
+    width: 80vw;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px black;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+.web1:hover {
+    transform: scale(1.05);
 }

@@ -131,15 +131,50 @@ header {
     padding-top: 5rem;
 }
 
+.chaos {
+    font-size: clamp(1rem, 10vw, 8rem);
+    animation: chaosShake 3s;
+    color: red;
+    text-shadow: 2px 2px 2px black;
+}
 
+@keyframes chaosShake {
+    0% {
+        color: white;
+        text-shadow: 0 0 0 black;
+
+    }
+    100% {
+        color: red;
+        text-shadow: 2px 2px 2px black;
+
+    }
+}
+
+.peace {
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+.fade-in {
+    animation: fadeIn 6s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0}
+    100% { opacity: 1; }
+  }
+  
 
 button {
     padding: 2rem;
     margin-top: 2rem;
     border-radius: 25px;
-    background-color: #7D345A;
+    border: #FF8C36 5px solid;
     color: white;
     font-size: 2rem;
+    
 }
 
 .heroDiv1 h1 {
@@ -158,13 +193,15 @@ button {
     text-decoration: none;
     padding: 2rem;
     color: #FFF768;
-    background-color: #264653;
-    border-radius: 0 0 25px 25px;
+    background-color: #2e4a55;
+    border-radius: 0 0 5px 5px;
     font-size: 2rem;
 }
 
 .navLinks a:hover {
-    transform: scale(1.2);
+    transform: scale(1, 1.2);
+    background-color: #264653;
+
 }
 
 .header_image {
