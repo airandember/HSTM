@@ -113,7 +113,7 @@ header {
     height: 100%;
     width: 100%;
     object-fit: cover; /* Ensures the image covers the entire container without distortion */
-    filter: blur(10px);
+    filter: blur(5px);
 }
 
 
@@ -132,28 +132,44 @@ header {
 }
 
 .chaos {
-    font-size: clamp(1rem, 10vw, 8rem);
-    animation: chaosShake 3s;
+    font-size: 0;
+    animation: chaosShake 3s, chaosSquish 2s 3s; /* Delays chaosSquish by 3s */
     color: red;
     text-shadow: 2px 2px 2px black;
 }
+
 
 @keyframes chaosShake {
     0% {
         color: white;
         text-shadow: 0 0 0 black;
-
+        font-size: clamp(1rem, 10vw, 8rem);;
     }
     100% {
         color: red;
         text-shadow: 2px 2px 2px black;
-
+        font-size: clamp(1rem, 10vw, 8rem);;
     }
 }
 
+@keyframes chaosSquish {
+    0% {
+        width: 100%;
+        font-size: clamp(1rem, 10vw, 8rem);;
+    }
+    50% {
+        width:100%;
+    }
+    100% {
+        width: 0;
+        font-size: 0;
+    }
+}
+
+
 .peace {
     color: rgba(255, 255, 255, 1);
-    
+    text-shadow: 2px 2px 15px rgb(255, 238, 152)
 }
 
 .fade-in {
@@ -161,9 +177,14 @@ header {
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    50% { opacity: 0}
-    100% { opacity: 1; }
+    0% { opacity: 0;
+         text-shadow: none;}
+    50% { opacity: 0;
+        text-shadow: 2px 2px 15px black
+    }
+    100% { opacity: 1;
+        text-shadow: 2px 2px 15px rgb(255, 238, 152);
+ }
   }
   
 
