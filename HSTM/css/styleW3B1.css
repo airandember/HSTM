@@ -99,6 +99,10 @@ header {
 
 }
 
+.pcol {
+    color: #264653;
+}
+
 #heroVidCont {
     position: absolute; 
     top: 0;
@@ -193,9 +197,26 @@ button {
     margin-top: 2rem;
     border-radius: 25px;
     border: #FF8C36 5px solid;
+    background-color: #264653;
     color: white;
     font-size: 2rem;
-    
+    transition: border 0.3s ease-in-out,
+                background-color 0.4s ease-in-out,
+                color 0.4s ease-in-out
+    ;
+}
+button:hover {
+    border: #FAB2EA 5px solid;
+    color: white;
+    background-color: #505C71;
+    box-shadow: 2px 2px 15px #DF52FF;
+}
+
+button:active {
+    border: #FAB2EA 5px solid;
+    color: #264653;
+    background-color: cyan;
+    box-shadow: 2px 2px 15px #DF52FF;
 }
 
 .heroDiv1 h1 {
@@ -217,11 +238,18 @@ button {
     background-color: #2e4a55;
     border-radius: 0 0 5px 5px;
     font-size: 2rem;
+    transition: background-color 0.25s ease-in-out,
+                transform 0.25s ease-in-out,
+                border-radius 0.25s ease-in-out;
+    margin: 0 5px  ;
 }
 
 .navLinks a:hover {
     transform: scale(1, 1.2);
-    background-color: #264653;
+    color: #264653;
+    background-color: #FAB2EA;
+    border-top: none;
+    border-radius: 5px 5px;
 
 }
 
@@ -369,19 +397,14 @@ footer {
     color: black;
 }
 
-.color_primary4 {
-    background-color: #A3FFFA;
-    color: black;
-}
-
 .color_accent1 {
     background-color: #FAB2EA;
     color: black;
 }
 
 .color_accent2 {
-    background-color: #455B46;
-    color: white;
+    background-color: #A3FFFA;
+    color: black;
 }
 
 .color_accent3 {
@@ -409,4 +432,13 @@ footer {
     background-color: white;
     color: black;
     box-shadow: 2px 2px 15px black;
+}
+
+.Massage_Section {
+    color: #264653;
+    max-width: 70vw;
+}
+
+.Massage_Section p {
+    line-height: 2;
 }
