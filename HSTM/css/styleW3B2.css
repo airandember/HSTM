@@ -1,6 +1,6 @@
 :root {
     --primary-1: #7fbaae;
-    --primary-2: #a0ccc3;
+    --primary-2: #f8f1e0;
     --primary-3: #c1ded8;
     --accent-1: #d1a38f;
     --accent-2: #d1a38f;
@@ -225,7 +225,12 @@ hr {
 
 }
 
-.Design_Section {
+p {
+    font-family: 'Comfortaa_Reg';
+    font-size: 1.25rem;
+}
+
+.Design_Section, .Font_Section, .Color_Section {
     width: 75vw;
     margin: 0 auto;
     display: flex;
@@ -233,4 +238,86 @@ hr {
     justify-content: center;
     align-items: center;
     line-height: 2;
+}
+
+.section_title, h1, #font1 {
+    font-family: 'Alucky';
+    font-size: 4rem;
+}
+
+#font2 {
+    font-family: 'CaviarDreams';
+    font-size: 4rem;
+}
+
+#font3 {
+    font-family: 'Comfortaa_Reg';
+    font-size: 4rem;
+}
+
+#font4 {
+    font-family: 'Plante';
+    font-size: 4rem;
+    font-weight: 100
+}
+
+.color_paletteCont {
+    display: flex; 
+    flex-direction: row;
+}
+
+.color_paletteCont div {
+    display: flex;
+    align-items: center;
+}
+
+.color_primary1, .color_primary2, .color_primary3,
+.color_accent1, .color_accent2, .color_accent3, .color_accent4, .color_accent5 {
+    padding: 3rem;
+    aspect-ratio: 1/1;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.color_primary1 {
+    background-color: var(--primary-1);
+}
+
+.color_primary2 {
+    background-color: var(--primary-2);
+}
+
+.color_primary3 {
+    background-color: var(--primary-3);
+
+}
+
+.color_accent1 {
+    background-color: var(--accent-1);
+
+}
+
+.color_accent2 {
+    background-color: var(--text-1);
+    color: white;
+}
+.color_accent3 {
+    background-color: var(--text-2);
+    color: white;
+
+}
+
+.color_accent4 {
+    background-color: var(--text-3);
+    color: white;
+
+}
+
+.color_accent5 {
+    background-color: var(--background-3);
+}
+
+.color_primary1:hover, .color_primary2:hover, .color_primary3:hover,
+.color_accent1:hover, .color_accent2:hover, .color_accent3:hover, .color_accent4:hover, .color_accent5:hover {
+    border-radius: 100px;
 }
