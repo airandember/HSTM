@@ -1,0 +1,323 @@
+:root {
+    --primary-1: #7fbaae;
+    --primary-2: #f8f1e0;
+    --primary-3: #c1ded8;
+    --accent-1: #d1a38f;
+    --accent-2: #d1a38f;
+    --accent-3: #d1a38f;
+    --background-1: #fdfefe;
+    --background-2: #ecf5f5;
+    --background-3: #dbeded;
+    --text-1: #101817;
+    --text-2: #243734;
+    --text-3: #395552;
+    --pDark-1: #4384a5;
+    --pDark-2: #5e9dbd;
+    --pDark-3: #82b3cc;
+    --aDark-1: #e17b8d;
+    --aDark-2: #e17b8d;
+    --aDark-3: #e17b8d;
+    --backDark-1: #0b161c;
+    --backDark-2: #12242e;
+    --backDark-3: #193341;
+    --tDark-1: #fbfcfd;
+    --tDark-2: #eaeff5;
+    --tDark-3: #d9e3ec;
+  }
+  
+  @font-face {
+    font-family: 'Alucky';
+    src: url('../assets/fonts/minimalism/Alucky.ttf');
+  }
+
+  @font-face {
+    font-family: 'CaviarDreams';
+    src: url('../assets/fonts/minimalism/CaviarDreams.ttf');
+  }
+
+  @font-face {
+    font-family: 'CaviarDreams_Bold';
+    src: url('../assets/fonts/minimalism/CaviarDreams_Bold.ttf');
+  }
+  @font-face {
+    font-family: 'CaviarDreams_BI';
+    src: url('../assets/fonts/minimalism/CaviarDreams_BoldItalic.ttf');
+  }
+  @font-face {
+    font-family: 'CaviarDreams_Italic';
+    src: url('../assets/fonts/minimalism/CaviarDreams_Italic.ttf');
+  }
+@font-face {
+    font-family: 'Comfortaa_Reg';
+    src: url('../assets/fonts/minimalism/Comfortaa-Regular.ttf');
+}
+@font-face {
+    font-family: 'Comfortaa_L';
+    src: url('../assets/fonts/minimalism/Comfortaa-Light.ttf');
+}@font-face {
+    font-family: 'Comfortaa_B';
+    src: url('../assets/fonts/minimalism/Comfortaa-Bold.ttf');
+}
+@font-face {
+    font-family: 'plante';
+    src: url('../assets/fonts/minimalism/Plante.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    color: var(--text-2);
+    font-weight: lighter;
+    background-color: var(--primary-2);
+    height: max-content;
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-1);
+    margin: 0.5vh 0.5vw;
+    border-radius: 25px;
+    min-height: max-content;
+}
+
+main {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER ============================================================================================== */
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.headerMain {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.header_image {
+    height: 200px;
+    border-radius: 25px 0 0 0;
+}
+
+.headerH1 {
+    font-family: 'plante', sans-serif;
+    font-weight: 100;
+    font-size: clamp(1rem, 4em, 8rem);
+    color: var(--text-3)
+}
+
+.headerH3 {
+    font-family: 'Alucky';
+    font-size: clamp(0.5rem, 3em, 8rem);
+    color: var(--text-3)
+
+}
+
+.navLinks {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navlink {
+    font-family: 'CaviarDreams';
+    font-size: clamp(1rem, 2em, 8rem);
+    text-decoration: none var(--accent-1);
+    color: var(--text-1);
+    transition: text-decoration 1s linear(0, 0.415 5.5%, 0.684 10.3%, 0.843 15%, 
+    0.883 17.4%, 0.895 19.8%, 0.888 21.6%, 0.869 23.4%, 0.785 27.4%,
+     0.127 46.1%, -0.006 51.3%, -0.086 56.4%, -0.119 60.8%,
+      -0.122 65.7%, -0.106 70.1%, -0.019 85.9%, -0.004 92.1%, 0);
+}
+
+.navlink:hover {
+    text-decoration: underline overline 5px var(--accent-1);
+    
+}
+
+
+
+
+/* HEROOO ==================================================================================================== */
+
+.hero_Section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+    background-color: #f8f1e0;
+    height: 70vh;
+
+}
+
+.heroDiv1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    align-items: center;
+    text-align: center;
+}
+
+.hero_Img {
+    height: 100%;
+    margin-left: 4rem;
+}
+
+.hero_Head {
+    font-size: clamp(2rem, 7em, 8rem);
+    font-family: 'CaviarDreams';
+}
+
+.hero_SubHead {
+    font-family: 'Alucky';
+    font-size: clamp(1rem, 4em, 8rem);
+
+}
+
+.hero_Button {
+    max-width: 200px;
+    padding: 2rem;
+    background-color: var(--accent-1);
+    border-radius: 0;
+    box-shadow: 0 0 0;
+    transition: border-radius 0.25s ease-in-out,
+                box-shadow 0.25s ease-in-out
+    ;
+}
+
+.hero_Button:hover {
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px var(--text-1);
+}
+
+.hero_Button:active {
+    box-shadow: 0 0 0 var(--text-1);
+
+}
+
+/* DESIGN ====================================================================================================== */
+
+hr {
+    margin-top: 15px;
+    border: solid 1px var(--backDark-2);
+
+}
+
+p {
+    font-family: 'Comfortaa_Reg';
+    font-size: 1.25rem;
+}
+
+.Design_Section, .Font_Section, .Color_Section {
+    width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+.section_title, h1, #font1 {
+    font-family: 'Alucky';
+    font-size: 4rem;
+}
+
+#font2 {
+    font-family: 'CaviarDreams';
+    font-size: 4rem;
+}
+
+#font3 {
+    font-family: 'Comfortaa_Reg';
+    font-size: 4rem;
+}
+
+#font4 {
+    font-family: 'Plante';
+    font-size: 4rem;
+    font-weight: 100
+}
+
+.color_paletteCont {
+    display: flex; 
+    flex-direction: row;
+}
+
+.color_paletteCont div {
+    display: flex;
+    align-items: center;
+}
+
+.color_primary1, .color_primary2, .color_primary3,
+.color_accent1, .color_accent2, .color_accent3, .color_accent4, .color_accent5 {
+    padding: 3rem;
+    aspect-ratio: 1/1;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.color_primary1 {
+    background-color: var(--primary-1);
+}
+
+.color_primary2 {
+    background-color: var(--primary-2);
+}
+
+.color_primary3 {
+    background-color: var(--primary-3);
+
+}
+
+.color_accent1 {
+    background-color: var(--accent-1);
+
+}
+
+.color_accent2 {
+    background-color: var(--text-1);
+    color: white;
+}
+.color_accent3 {
+    background-color: var(--text-2);
+    color: white;
+
+}
+
+.color_accent4 {
+    background-color: var(--text-3);
+    color: white;
+
+}
+
+.color_accent5 {
+    background-color: var(--background-3);
+}
+
+.color_primary1:hover, .color_primary2:hover, .color_primary3:hover,
+.color_accent1:hover, .color_accent2:hover, .color_accent3:hover, .color_accent4:hover, .color_accent5:hover {
+    border-radius: 100px;
+}
