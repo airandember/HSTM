@@ -203,20 +203,64 @@ img {
     z-index: 1000;
 }
 
+.button {
+    position: absolute;
+    top: 75%;
+    left: 55%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    z-index: 1000;
+}
+
+.buttonUp {
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+    z-index: 1000;
+}
+
 .buttonLink {
     color: white;
     text-decoration: none;
-    padding: 2rem ;
-    width: 20vw;
+    padding: 2rem;
     min-width: 100px;
     background-color: rgb(240, 135, 135);
     text-transform: uppercase;
     transition: all ease-in-out 0.35s;
     border: none;
+    border-radius: 0;
+    box-shadow: 0 0 0 rgb(25, 25, 53);
 }
 
 .buttonLink:hover {
-    border: solid 4px rgb(240, 135, 135);
-    background-color: red;
+    box-shadow: 13px 13px 50px rgb(0, 0, 26);
+    border-radius: 25px;
+    width: 105%;
+}
+
+.buttonLink_return {
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+    min-width: 100px;
+    background-color: rgb(240, 135, 135);
+    text-transform: uppercase;
+    transition: all ease-in-out 0.35s;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 0 rgb(25, 25, 53);
+}
+
+.buttonLink_return:hover {
+    box-shadow: 2px 2px 50px rgb(197, 197, 230);
+    border-radius: 25px;
     width: 105%;
 }
