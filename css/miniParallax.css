@@ -37,6 +37,109 @@ img {
     width: auto;
 }
 
+.dark_logo {
+    color: white;
+}
+
+.about_body main {
+    max-width: 1600px;
+    background: rgba(52, 54, 77, 0.4);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+                -10px -10px 20px rgba(158, 248, 248, 0.5),
+                inset 0 0 10px rgba(255, 255, 255, 0.2),
+                inset 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    pointer-events: auto;
+    padding: 3rem;
+    color: white;
+}
+
+.empCont {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.empCont img {
+    padding-right: 2rem;
+}
+
+.aboutWriteUpCont {
+    line-height: 2.5;
+}
+
+.contact_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white !important;
+    max-width: 1600px;
+    background: rgba(52, 54, 77, 0.4);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+                -10px -10px 20px rgba(158, 248, 248, 0.5),
+                inset 0 0 10px rgba(255, 255, 255, 0.2),
+                inset 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    pointer-events: auto;
+    padding: 3rem;
+    color: white;
+    margin: 0 auto;
+    min-height: 70vh;
+}
+
+.contact_buttons {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-top: 3rem;
+
+}
+
+.phoneLine {
+    font-size: 2rem;
+}
+
+.button {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    
+    z-index: 1000;
+}
+
+.buttonUp {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    
+    z-index: 1000;
+}
+
+.buttonLink {
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+    min-width: 100px;
+    background-color: rgb(240, 135, 135);
+    text-transform: uppercase;
+    transition: all ease-in-out 0.35s;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 0 rgb(25, 25, 53);
+}
+
+.buttonLink:hover {
+    box-shadow: 13px 13px 50px rgb(0, 0, 26);
+    border-radius: 25px;
+    width: 105%;
+}
+
+.phoneContact {
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
 .newClientBody {
     background-color: black;
 }
@@ -56,6 +159,7 @@ img {
 
 .app-bar {
     margin-bottom: 2rem;
+    justify-content: space-evenly;
 }
 
 .nC_main {
@@ -69,14 +173,20 @@ img {
     margin-top: 3rem;
 }
 
+.dark {
+    color: white !important;
+}
+
 .navUl {
     display: flex;
     flex-direction: row;
     list-style: none;
     font-family: 'Poppins', sans-serif;
     font-size: 1.15rem;
-
+    justify-content: space-evenly;
 }
+
+
 
 .navLi {
     position: relative;
