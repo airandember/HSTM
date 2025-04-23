@@ -249,6 +249,14 @@ img {
     
 }
 
+.navA:hover {
+    text-decoration: underline;
+}
+
+.current_page {
+    background-color: rgba(240, 135, 135, 0.92);
+}
+
 .servicesLi {
     display: inline-block;
     

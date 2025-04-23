@@ -321,6 +321,14 @@ img {
     text-transform: uppercase;
 }
 
+.navA:hover {
+    text-decoration: underline;
+}
+
+.current_page {
+    background-color: rgba(240, 135, 135, 0.92);
+}
+
 .services_drop {
     display: flex;
     flex-direction: column;
