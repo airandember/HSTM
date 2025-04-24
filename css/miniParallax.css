@@ -439,16 +439,20 @@ img {
     padding: 2rem;
     border-radius: 39px;
     background: linear-gradient(145deg, #ccbcbc, #f0f0f0);
-    box-shadow:  14px 14px 15px #797979,
-             -14px -14px 15px #ffffff;
-    transition: background 1s ease-in-out;
+    box-shadow:  5px 5px 10px #797979,
+             -5px -5px 10px #ffffff;
+    
+    transition: box-shadow 0.5s ease-in-out;
 
 }
 
 .cardFaq:hover {
-    background: linear-gradient(215deg, #ccbcbc, #f0f0f0);
+    box-shadow:  14px 14px 15px #797979,
+             -14px -14px 15px #ffffff;
 }
     
+
+
     /* 
     <div class="timeCont">
             <h1 class="timeTitle">Peaceful Massage</h1>
