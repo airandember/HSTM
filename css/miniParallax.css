@@ -392,6 +392,44 @@ img {
 
 
 }
+
+.FAQ_back {
+    position: absolute;
+    width: auto;
+    height: 650px;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+}
+
+.FAQ_body {
+    background-color: #e0e0e0;
+}
+
+.FAQ_body main {
+    color: rgb(0, 0, 0);
+
+}
+
+.cardFaqCont {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardFaq {
+    margin: 2rem;
+    height: 350px;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 39px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  14px 14px 15px #797979,
+             -14px -14px 15px #ffffff;
+}
     
     /* 
     <div class="timeCont">
