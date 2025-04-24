@@ -426,7 +426,7 @@ img {
 }
 
 .cardFaqCont {
-    max-width: 1600px;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -435,8 +435,8 @@ img {
 
 .cardFaq {
     margin: 2rem;
-    height: 350px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     padding: 2rem;
     border-radius: 39px;
     background: linear-gradient(145deg, #ccbcbc, #f0f0f0);
@@ -445,6 +445,10 @@ img {
     
     transition: box-shadow 0.5s ease-in-out;
 
+}
+
+.cardFaq h1 {
+    font-size: 1.5rem;
 }
 
 .cardFaq:hover {
