@@ -396,7 +396,7 @@ img {
 .FAQ_back {
     position: absolute;
     width: auto;
-    height: 650px;
+    height: 750px;
     bottom: 0;
     right: 0;
     z-index: -2;
@@ -441,6 +441,12 @@ img {
     background: linear-gradient(145deg, #ccbcbc, #f0f0f0);
     box-shadow:  14px 14px 15px #797979,
              -14px -14px 15px #ffffff;
+    transition: background 1s ease-in-out;
+
+}
+
+.cardFaq:hover {
+    background: linear-gradient(215deg, #ccbcbc, #f0f0f0);
 }
     
     /* 
