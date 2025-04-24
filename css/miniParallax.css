@@ -413,6 +413,18 @@ img {
 
 }
 
+.FAQ_back2 {
+    position: fixed;
+    width: auto;
+    height: 650px;
+    top: 0;
+    left: -10vw;
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+    transform: rotate(90deg);
+}
+
 .cardFaqCont {
     max-width: 1600px;
     display: flex;
