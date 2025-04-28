@@ -141,7 +141,21 @@ img {
 }
 
 .newClientBody {
-    background-color: black;
+    background-color: white;
+}
+
+.newClientBody, .newClientBody h1, .newClientBody nav, .newClientBody nav ul li a, .newClientBody div p {
+    color: #0a0318;
+
+}
+
+.newClientImg {
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh; 
+    z-index: -1;
+    opacity: 40%;
 }
 
 .backgroundImg {
@@ -266,14 +280,25 @@ img {
     position: relative;
 }
 
+.timeContCont {
+    display: flex;
+    flex-direction: row;
+
+}
+
 .timeCont {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+     width: 100%; 
     margin: 0.5rem;
     text-align: center;
     padding: 2rem;
-    text-align: center;
+    justify-content: center;
     color: white;
-    background: rgba(255, 255, 255, 0.2);
+    /* background: rgba(255, 255, 255, 0.2); */
     border-radius: 15px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(43, 29, 12, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
@@ -318,10 +343,11 @@ img {
 
 .timeSubCont {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    text-align: center;
+    text-align:justify;
     align-items: center;
+    justify-content: space-between;
 }
 
 
