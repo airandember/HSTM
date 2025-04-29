@@ -428,6 +428,7 @@ img {
     z-index: -2;
     margin: 0;
     padding: 0;
+    opacity: 40%;
 }
 
 .FAQ_body {
@@ -448,6 +449,7 @@ img {
     z-index: -2;
     margin: 0;
     padding: 0;
+    opacity: 40%;
     transform: rotate(90deg);
 }
 
