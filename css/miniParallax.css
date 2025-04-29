@@ -141,6 +141,10 @@ img {
     font-size: 1.5rem;
 }
 
+.phoneContact h1 {
+    text-align: center;
+}
+
 .newClientBody {
     background-color: white;
 }
@@ -532,6 +536,20 @@ img {
 
 }
 
+.cardFaq1 {
+    margin: 2rem;
+    height: max-content;
+    width: 90vw;
+    padding: 2rem;
+    border-radius: 50px;
+background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    
+    transition: box-shadow 0.5s ease-in-out;
+
+}
+
 .cardFaq h1 {
     font-size: 1.5rem;
 }
@@ -568,9 +586,11 @@ img {
 
 .contactBckImg {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
+    right: 15%;
+    bottom: -70%;
+    width: 75vw;
+    height: auto;
+    z-index: -1;
 }
 
 .contactBckImg2 {
@@ -583,4 +603,6 @@ img {
 iframe {
     border-radius: 25px;
     margin-top: 2rem;
+    width:100%;
+    height:600px;
 }
