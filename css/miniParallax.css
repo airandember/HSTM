@@ -78,7 +78,7 @@ img {
     background: rgba(52, 54, 77, 0.4);
     border-radius: 15px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
-                -10px -10px 20px rgba(158, 248, 248, 0.5),
+                -10px -10px 20px rgba(255, 255, 255, 0.5),
                 inset 0 0 10px rgba(255, 255, 255, 0.2),
                 inset 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
@@ -91,7 +91,7 @@ img {
 
 .contact_buttons {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 0.75fr 0.5fr;
     margin-top: 3rem;
 
 }
@@ -127,6 +127,7 @@ img {
     border: none;
     border-radius: 0;
     box-shadow: 0 0 0 rgb(25, 25, 53);
+    font-size: 1rem;
 }
 
 .buttonLink:hover {
@@ -245,7 +246,7 @@ img {
     text-transform: uppercase;
 }
 
-.retNavA {
+.retNavA, .serv_retNavA {
     
         text-decoration: none;
         color: white;
@@ -563,3 +564,23 @@ img {
                 <a href="" class="blockLink"><h3 class="block">90min</h3></a>
             </div>
         </div> */
+
+
+.contactBckImg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+.contactBckImg2 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+iframe {
+    border-radius: 25px;
+    margin-top: 2rem;
+}
