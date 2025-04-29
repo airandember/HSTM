@@ -158,6 +158,23 @@ img {
     opacity: 40%;
 }
 
+.retClientBody {
+    background-color: #1c2a33;
+}
+
+.retClientBody, .retClientBody header, .retClientBckImg main div h1, .retClientBckImg main div h2 {
+    color: white !important;
+}
+
+.retClientBckImg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    z-index: -1;
+    opacity: 70%;
+}
+
 .backgroundImg {
     position: absolute;
     top: 0;
@@ -228,6 +245,16 @@ img {
     text-transform: uppercase;
 }
 
+.retNavA {
+    
+        text-decoration: none;
+        color: white;
+        padding: 2rem;
+        font-size: 1.15rem;
+        text-transform: uppercase;
+    
+}
+
 .services_drop {
     display: flex;
     flex-direction: column;
@@ -286,7 +313,31 @@ img {
 
 }
 
+.timeContRetCont {
+    display: flex;
+    flex-direction: row;
+}
+
 .timeCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
+    margin: 0.5rem;
+    text-align: center;
+    padding: 2rem;
+    justify-content: center;
+    color: white;
+    /* background: rgba(255, 255, 255, 0.2); */
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(43, 29, 12, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    pointer-events: auto;
+}
+
+.timeContRet {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -303,6 +354,11 @@ img {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(43, 29, 12, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     pointer-events: auto;
+}
+
+.timeContRet h1, .timeContRet div p{
+    color: white;
+    line-height: 2;
 }
 
 .timeTitle {
