@@ -75,7 +75,7 @@ img {
     justify-content: center;
     color: white !important;
     max-width: 1600px;
-    background: rgba(52, 54, 77, 0.4);
+    background: rgba(52, 54, 77, 0.9);
     border-radius: 15px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
                 -10px -10px 20px rgba(255, 255, 255, 0.5),
@@ -84,7 +84,6 @@ img {
     backdrop-filter: blur(10px);
     pointer-events: auto;
     padding: 3rem;
-    color: white;
     margin: 0 auto;
     min-height: 70vh;
 }
@@ -161,6 +160,7 @@ img {
     height: 100vh; 
     z-index: -1;
     opacity: 40%;
+    transform: scaleX(-1);
 }
 
 .retClientBody {
@@ -338,8 +338,13 @@ img {
     /* background: rgba(255, 255, 255, 0.2); */
     border-radius: 15px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(43, 29, 12, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     pointer-events: auto;
+    transition: backdrop-filter 1s ease-in-out;
+}
+
+.timeCont:hover {
+    backdrop-filter: blur(100px);
 }
 
 .timeContRet {
@@ -358,7 +363,13 @@ img {
     border-radius: 15px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(43, 29, 12, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
+    transition: backdrop-filter 1s ease-in-out;
     pointer-events: auto;
+}
+
+.timeContRet:hover {
+    backdrop-filter: blur(100px);
+
 }
 
 .timeContRet h1, .timeContRet div p{
