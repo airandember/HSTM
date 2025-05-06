@@ -22,7 +22,11 @@
         margin: 0 auto;
         color: white;
         z-index: 9999;
-        background: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav {
+        display: none;
     }
     
     .nav ul {
@@ -49,7 +53,7 @@
         text-align: center;
         color: rgb(35, 4, 59);
         width: 90vw;
-        height: 50vh;
+        height: 75vh;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 15px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
@@ -60,8 +64,25 @@
         pointer-events: auto;
     }
 
-    .text h3, .text h1, .text h2 {
+    .text h1 {
+        font-size: clamp(1rem, 3rem, 3rem  );
+        position: relative;
+        top: 80px;
+        /* transform: translate(5%, 50%); */
+
+    }
+
+    .text h2 {
         font-size: clamp(1rem, 1.25rem, 3rem  );
+        position: relative;
+        top: 80px;
+
+    }
+
+    .text h3 {
+        font-size: clamp(1rem, 1.25rem, 3rem  );
+        margin-bottom: 3rem;
+
     }
 
 
@@ -106,6 +127,68 @@
         left: 0;
     }
 
+    .button {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        padding: 0;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        z-index: 1000;
+    }
+
+
+    .buttonUp {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        padding: 0;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        z-index: 1000;
+    }
+
+    .buttonLink {
+        color: white;
+        text-decoration: none;
+        padding: 2rem;
+        min-width: 100px;
+        background-color: rgb(240, 135, 135);
+        text-transform: uppercase;
+        transition: all ease-in-out 0.35s;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 0 0 rgb(25, 25, 53);
+    }
+
+    .buttonLink:hover {
+        box-shadow: 13px 13px 50px rgb(0, 0, 26);
+        border-radius: 25px;
+        width: 105%;
+    }
+
+    .buttonLink_return {
+        color: white;
+        text-decoration: none;
+        padding: 2rem;
+        min-width: 100px;
+        background-color: rgb(240, 135, 135);
+        text-transform: uppercase;
+        transition: all ease-in-out 0.35s;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 0 0 rgb(25, 25, 53);
+    }
+
+    .buttonLink_return:hover {
+        box-shadow: 2px 2px 50px rgb(197, 197, 230);
+        border-radius: 25px;
+        width: 105%;
+    }
 
 
 }
@@ -308,7 +391,7 @@
         z-index: 1000;
     }
 
-    .button {
+    /* .button {
         position: absolute;
         top: 75%;
         left: 55%;
@@ -318,7 +401,7 @@
         text-align: center;
         
         z-index: 1000;
-    }
+    } */
 
     .buttonUp {
         position: absolute;
