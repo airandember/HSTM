@@ -208,9 +208,8 @@
 
 @media screen and (orientation: landscape) and (max-width:857px) {
 
-    main {
-        background: green;
-        height: 100%;
+    .app-bar {
+        z-index: 20000;
     }
 
     .button {
@@ -240,6 +239,7 @@
 
     .text {
         height: 80%;
+        top: 55%;
     }
 
     .text h3 {
