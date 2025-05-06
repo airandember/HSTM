@@ -13,6 +13,12 @@
 
 @media screen and (max-width:857px) {
 
+    html {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
     main {
         width: 100vw;
         padding: 0;
@@ -21,7 +27,7 @@
 
     header {
         position: absolute;
-        width: 95%;
+        width: 100vw;
         display: flex;
         justify-content: space-around;
         align-items: center; 
