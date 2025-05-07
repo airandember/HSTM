@@ -21,7 +21,8 @@
         height: 100vh;
         padding: 0;
         margin: 0;
-        overflow: hidden;
+        overflow-x: hidden;
+
     }
 
     header {
@@ -129,11 +130,11 @@
     }
 
     .trees6 {
-        position: absolute;
+        position: fixed;
         top: 120%;
         left: 50%;
         transform: none;
-
+        width: 100vw;
     }
 
     .trees7 {
@@ -203,6 +204,11 @@
         width: 105%;
     }
 
+    .homeBody {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+    }
 
 }
 
@@ -447,7 +453,7 @@
         display: flex;
         position: absolute;
         top: 75%;
-        left: 55%;
+        left: 57%;
         padding: 0;
         margin: 0;
         transform: translate(-50%, -50%);
@@ -473,7 +479,7 @@
     .buttonUp {
         position: absolute;
         top: 75%;
-        left: 45%;
+        left: 43%;
         padding: 0;
         margin: 0;
         transform: translate(-50%, -50%);
