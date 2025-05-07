@@ -8,9 +8,6 @@
 }
 
 
-
-
-
 @media screen and (max-width:857px) {
 
     html {
@@ -254,20 +251,26 @@
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-        background-color: rgb(11, 37, 4);
+        background-color: rgb(235, 235, 235);
         /* background-color: rgb(11, 37, 4); */
         position: relative;
     }
 
     header {
         position: absolute;
-        width: 95%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center; 
         margin: 0 auto;
         color: white;
         z-index: 9999;
+        background: rgba(146, 146, 146, 0.5);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+                    -10px -10px 20px rgba(13, 3, 41, 0.5),
+                    inset 0 0 10px rgba(255, 255, 255, 0.5),
+                    inset 0 0 10px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
     }
 
     img {
@@ -288,6 +291,8 @@
         font-size: 1.15rem;
         text-transform: uppercase;
     }
+
+
 
     .background {
         position: absolute;
@@ -316,9 +321,9 @@
 
     .bg_img {
         position: absolute;
-        width: 120vw;
+        width: 90vw;
         top: calc(50% + 20px);
-        left: calc(50% + 10px);
+        left: calc(40% + 10px);
         transform: translate(-50%, -50%);
     }
 
@@ -368,7 +373,7 @@
         top: calc(50% + 20px);
         left: calc(80% + 10px);
         transform: translate(-50%, -50%);
-
+        /* opacity: 50%; */
 
     }
 
@@ -379,16 +384,17 @@
         padding: 2rem 0;
         transform: translate(-50%, -50%);
         text-align: center;
-        color: white;
+        color: rgb(255, 255, 255);
         width: 70vw;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(54, 37, 61, 0.5);
         border-radius: 15px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
                     -10px -10px 20px rgba(13, 3, 41, 0.5),
-                    inset 0 0 10px rgba(255, 255, 255, 0.5),
+                    inset 0 0 10px rgba(99, 99, 99, 0.5),
                     inset 0 0 10px rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(10px);
         pointer-events: auto;
+        height: max-content;
     }
 
     .text h3 {
@@ -420,7 +426,7 @@
         position: absolute;
         width: 60vw;
         top: calc(60% + 20px);
-        left: calc(70% + 10px);
+        left: calc(74% + 10px);
         transform: translate(-50%, -50%);
     }
 
@@ -435,9 +441,10 @@
     }
 
     .button {
+        display: flex;
         position: absolute;
-        top: 80%;
-        left: 50%;
+        top: 75%;
+        left: 55%;
         padding: 0;
         margin: 0;
         transform: translate(-50%, -50%);
@@ -474,7 +481,7 @@
         color: white;
         text-decoration: none;
         padding: 2rem;
-        min-width: 100px;
+        min-width: 200px;
         background-color: rgb(240, 135, 135);
         text-transform: uppercase;
         transition: all ease-in-out 0.35s;
@@ -617,7 +624,7 @@
     }
 
     .backDarken {
-        background-color: rgba(0, 0, 56, 0.4);
+        background-color: rgba(255, 255, 255, 0.5);
         position: absolute;
         top: 0;
         left: 0;
