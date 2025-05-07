@@ -21,9 +21,10 @@
 
     main {
         width: 100vw;
+        height: 100vh;
         padding: 0;
         margin: 0;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     header {
@@ -132,7 +133,7 @@
 
     .trees6 {
         position: absolute;
-        bottom: 0;
+        top: 120%;
         left: 50%;
         transform: none;
 
