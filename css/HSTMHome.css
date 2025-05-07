@@ -131,10 +131,10 @@
 
     .trees6 {
         position: fixed;
-        top: 120%;
+        top: 100%;
         left: 50%;
         transform: none;
-        width: 100vw;
+        width: 150vw;
     }
 
     .trees7 {
@@ -250,6 +250,14 @@
 
     .text h3 {
         display: none;
+    }
+
+    .trees6 {
+        position: fixed;
+        top: 150%;
+        left: 50%;
+        transform: none;
+        width: 100vw;
     }
 }
 
@@ -527,8 +535,6 @@
         border-radius: 25px;
         width: 105%;
     }
-
-
 
     .hidden {
         opacity: 0;
