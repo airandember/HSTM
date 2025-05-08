@@ -131,10 +131,10 @@
 
     .trees6 {
         position: fixed;
-        top: 100%;
-        left: 50%;
+        bottom: -45%;
+        left: 0;
         transform: none;
-        width: 150vw;
+        width: 600px;
     }
 
     .trees7 {
@@ -143,7 +143,7 @@
 
     .button {
         position: absolute;
-        top: 60%;
+        top: 55%;
         left: 50%;
         padding: 0;
         margin: 0;
@@ -241,6 +241,10 @@
         text-align: center;
         
         z-index: 1000;
+    }
+
+    .buttonLink {
+        min-width: 150px;
     }
 
     .text {
@@ -423,12 +427,13 @@
         font-weight: 400;
         font-size: 8.5rem;
         line-height: 0.65;
-
+        padding-bottom: .5rem;
     }
 
     .text h2 {
         font-weight: 300;
         font-size: 3.5rem;
+        
     }
 
     .trees6 {
