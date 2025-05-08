@@ -63,10 +63,11 @@
         padding: 2rem 0;
         transform: translate(-50%, -50%);
         text-align: center;
-        color: rgb(35, 4, 59);
+        /* color: rgb(35, 4, 59); */
+        color: white;
         width: 90vw;
         height: 85vh;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(87, 87, 87, 0.4);
         border-radius: 15px;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
                     -10px -10px 20px rgba(13, 3, 41, 0.5),
@@ -259,10 +260,10 @@
 
     .trees6 {
         position: fixed;
-        top: 150%;
+        bottom: -110%;
         left: 50%;
         transform: none;
-        width: 100vw;
+        width: 600px;
     }
 }
 
