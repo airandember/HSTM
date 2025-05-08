@@ -133,8 +133,9 @@
         position: fixed;
         bottom: -45%;
         left: 0;
-        transform: none;
+        transform: none !important;
         width: 600px;
+        pointer-events: none;
     }
 
     .trees7 {
