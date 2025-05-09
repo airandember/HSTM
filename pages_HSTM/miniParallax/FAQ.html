@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HS Therapeutic Massage Home</title>
-        <link rel="stylesheet" href="../../css/miniParallax.css">
-        <script src="../../scripts/tbd.js" defer></script>
+        <link rel="stylesheet" href="../../css/faq.css">
+        <script src="../../scripts/mobMenu.js" defer></script>
+        <!-- <script src="../../scripts/tbd.js" defer></script> -->
     </head>
     <body class="FAQ_body">
         <!-- <img src="../../assets/img/FlowerHold.webp" alt="" class="FAQ_back"> -->
@@ -28,11 +29,11 @@
             </nav>
           </header>
         <main>
-          <div class="">
-             
-              <h1 >COMING SOON...</h1>
+          <div class="contentDiv">
+            <div class="titleSection">
+              <h1>COMING SOON...</h1>
               <p>This is a less busy example of the Neumorphism minimalistic design. Maybe we keep the motion for the home page?</p>
-            
+            </div>
             <br>
             <div class="cardFaqCont">
               <div class="cardFaq">
@@ -69,8 +70,25 @@
               </div>
               
             </div>
-          </div>>  
+          </div>
         </main>
+        <div class="mobileMenu mobileOff">
+          <h2 id="mobMenuTitle">Menu</h2>
+          <ul class="mobUl">
+            <li class="mobLi"><a class="mobA " href="../../index.html">Home</a></li>
+            <li class="mobLiDrop">SERVICES
+                <ul class="mobServices_drop">
+                    <li class="mobServicesLi"><a class="mobServ_navA" href="pages_HSTM/miniParallax/new_client.html">New Client</a></li>
+                    <li class="mobServicesLi"><a class="mobServ_navA" href="pages_HSTM/miniParallax/ret_client.html">Returning</a></li>
+                </ul>
+            </li>
+            <li class="mobNavLi mobCurrent_page"><a class="mobNavA" href="pages_HSTM/miniParallax/FAQ.html">FAQ</a></li>
+            <li class="mobNavLi"><a class="mobNavA" href="pages_HSTM/miniParallax/about.html">About</a></li>
+            <li class="mobNavLi"><a class="mobNavA" href="pages_HSTM/miniParallax/contact.html">Contact</a></li>
+            <!-- <h2 id="mobMenuCarrot">⋁</h2> -->
+          </ul>
+          <h2 id="mobMenuCarrot">X</h2>
+        </div>
         <footer></footer>
     </body>
 </html>

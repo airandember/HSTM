@@ -7,6 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@media only screen and (min-width: 1232px) {
+
 html {
     /* background-size: 100%;  */
     min-height: 100vh;
@@ -616,4 +618,5 @@ iframe {
     margin-top: 2rem;
     width:100%;
     height:600px;
+}
 }
