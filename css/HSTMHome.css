@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    background-color: rgb(219, 253, 255);
+}
+
 
 .mobileMenu {
     display: none;
