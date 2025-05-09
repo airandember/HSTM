@@ -7,6 +7,75 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Mobile Menu */
+.mobileMenu {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    background: rgba(240, 135, 135, 1);
+    z-index: 10000;
+}
+
+.mobileOff {
+    height: 35px;
+    transition: all ease-in-out 0.75s;
+}
+
+.mobileOpen {
+    height: calc(100vh - 45px); /* Adjust as needed */
+    transition: all ease-in-out 0.75s;
+}
+
+.mobUl {
+    display: block;
+}
+
+.mobLiDrop {
+    color: black;
+    /* border: 3px solid rgba(197, 99, 99, 0.95); */
+}
+
+.mobServ_navA {
+    text-decoration: none;
+    font-size: clamp(16px, 1.5rem, 3.5rem);
+    color: white;
+}
+
+.mobServicesLi {
+    list-style: none;
+    margin: 1rem;
+    background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
+    box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
+                 -8px -8px 14px rgba(255, 132, 132, 0.95);
+    
+}
+
+.mobNavLi {
+    padding: 1rem 0;
+}
+
+.mobA, .mobLiDrop, .mobNavA {
+    padding: 1.5rem;
+    font-size: clamp(16px, 2rem, 3.5rem);
+}
+
+.mobUl, .mobLi, .mobA, .mobNavA {
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.mobCurrent_page {
+    background-color: rgba(197, 99, 99, 0.95);
+    width: 100vw;
+
+}
+
 
 @media only screen and (orientation: portrait) and (max-width:857px) {
 
@@ -1039,6 +1108,16 @@
         background: linear-gradient(rgba(255, 255, 255,0), rgba(240, 135, 135, 0.5), rgba(255, 255, 255,0));
     }
 
+    .mobUl {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .mobNavLi {
+        padding: 2rem 0;
+    }
+
     .nav {
         display: none;
     }
@@ -1210,6 +1289,11 @@
 
 }
 @media screen and (orientation: landscape) and (max-height: 327px) {
+    .mobUl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     .buttonStandard {
         display: flex;
         position: absolute;
