@@ -645,9 +645,6 @@ iframe {
         flex-direction: column;
     }
     
-    .nav {
-        display: none;
-     }
     
     .nav {
         display: none;
@@ -657,6 +654,7 @@ iframe {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: center;
         width: 100%;
     }
 
@@ -690,12 +688,13 @@ iframe {
     
         .mobServ_navA {
             text-decoration: none;
-            font-size: clamp(16px, .75rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
             color: white;
         }
     
         .mobServicesLi {
             list-style: none;
+            padding: .5rem;
             margin: 0.55rem;
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
@@ -732,7 +731,7 @@ iframe {
     
         .mobA, .mobLiDrop, .mobNavA {
             padding: 0.5rem;
-            font-size: clamp(16px, 0.7rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
         }
     
         .mobUl, .mobLi, .mobA, .mobNavA {
@@ -747,6 +746,6 @@ iframe {
         }
 
         .mobCurrent_service {
-            border-bottom: red 3px solid;
+            box-shadow: 2px 2px 15px rgb(255, 255, 232);
         }
 }

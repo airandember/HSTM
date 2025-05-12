@@ -456,14 +456,11 @@ iframe {
     }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 900) {
+@media only screen and (orientation: landscape) and (max-width: 900px) {
     body {
         padding: 0;
     } 
     
-    .nav {
-        display: none;
-     }
     
     .nav {
         display: none;
@@ -472,7 +469,9 @@ iframe {
     .mobUl {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
     }
 
         /* Mobile Menu */
@@ -515,7 +514,7 @@ iframe {
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
-            
+            width: 100%;
         }
     
         #mobMenuTitle {
@@ -542,19 +541,27 @@ iframe {
         }
 
         .mobA {
-            display: none;
+            display: visible;
         }
     
         .mobA, .mobLiDrop, .mobNavA {
             padding: 0.5rem;
-            font-size: clamp(16px, 0.7rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
         }
     
         .mobUl, .mobLi, .mobA, .mobNavA {
             color: white;
-            width: 100%;
             text-decoration: none;
             list-style: none;
+        }
+        
+        .mobCurrent_page {
+            background-color: rgba(197, 99, 99, 0.95);
+            width: 100%;
+        }
+
+        .mobCurrent_service {
+            border-bottom: red 3px solid;
         }
     
     

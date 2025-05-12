@@ -72,14 +72,21 @@ header {
 
 }
 
-.newClientImg {
+.retClientBody {
+    background-color: #1c2a33;
+}
+
+.retClientBody, .retClientBody header, .retClientBckImg main div h1, .retClientBckImg main div h2 {
+    color: white !important;
+}
+
+.retClientBckImg {
     position: fixed;
-    top: 0;
-    left:0;
-    height: 100vh; 
+    bottom: 0;
+    right: 0;
+    height: 100vh;
     z-index: -1;
-    opacity: 40%;
-    transform: scaleX(-1);
+    opacity: 70%;
 }
 
 .timeContCont {
@@ -612,46 +619,33 @@ iframe {
         transition: box-shadow 0.5s ease-in-out;
     
     }
+
+    .timeContRetCont {
+        flex-direction: column;
+        
+    }
+
+    .timeContRet {
+        margin: 0 0 1rem 0;
+
+    }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 900px) {
     body {
         padding: 0;
     } 
-
-    .contentDiv {
-        padding: .5rem;
-    }
-
-    .app-bar {
-        margin: 0;
-
-    }
-
-    .massageExplain {
-        margin-bottom: 2rem;
-    }
-
-    .timeCont {
-        margin: 1rem 0;
-    }
-
-    .timeContCont {
-        flex-direction: column;
-    }
     
     .nav {
         display: none;
      }
     
-    .nav {
-        display: none;
-    }
-
-    .mobUl {
+     .mobUl {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
     }
 
         /* Mobile Menu */
@@ -684,13 +678,14 @@ iframe {
     
         .mobServ_navA {
             text-decoration: none;
-            font-size: clamp(16px, .75rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
             color: white;
         }
     
         .mobServicesLi {
             list-style: none;
             margin: 0.55rem;
+            padding: .5rem;
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
@@ -721,26 +716,31 @@ iframe {
         }
 
         .mobA {
-            display: none;
+            display: visible;
+            width: auto;
         }
     
         .mobA, .mobLiDrop, .mobNavA {
             padding: 0.5rem;
-            font-size: clamp(16px, 0.7rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
         }
     
         .mobUl, .mobLi, .mobA, .mobNavA {
             color: white;
-            width: 100%;
+            /* width: 100%; */
             text-decoration: none;
             list-style: none;
         }
     
     
     
-        .mobCurrent_page {
-            background-color: rgba(197, 99, 99, 0.95);
-            width: 100vw;
+        .mobCurrent_service {
+            box-shadow: 2px 2px 15px rgb(255, 255, 232);
+
     
+        }
+
+        .timeContRetCont {
+            flex-direction: column;
         }
 }

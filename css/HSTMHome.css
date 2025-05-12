@@ -87,6 +87,7 @@ main {
 
     .mobServicesLi {
         list-style: none;
+        padding: .5rem;
         margin: 0.55rem;
         background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
         box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
@@ -95,6 +96,8 @@ main {
     }
 
     #mobMenuTitle {
+        width: 100vw;
+        background-color: rgba(240, 135, 135, 1);
         z-index: 20000;
     }
 
@@ -738,8 +741,11 @@ main {
     .mobUl {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
     }
+
         /* Mobile Menu */
         .mobileMenu {
             display: grid;
@@ -762,9 +768,7 @@ main {
             height: calc(100vh - 45px); /* Adjust as needed */
             transition: all ease-in-out 0.75s;
         }
-    
         
-    
         .mobLiDrop {
             color: black;
             /* border: 3px solid rgba(197, 99, 99, 0.95); */
@@ -772,17 +776,18 @@ main {
     
         .mobServ_navA {
             text-decoration: none;
-            font-size: clamp(16px, 1.5rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
             color: white;
         }
     
         .mobServicesLi {
             list-style: none;
+            padding: .5rem;
             margin: 0.55rem;
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
-            
+            width: 100%;
         }
     
         #mobMenuTitle {
@@ -790,40 +795,46 @@ main {
         }
     
         #mobMenuCarrot {
-            
+            padding: 0;
+            margin: 0;
             display: grid;
             text-align: center;
             align-items: center;
-            width: 50px;
-            height: 50px;
+            width: 25px;
+            height: 25px;
             border-radius: 25%;
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
-            box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
-                        -8px -8px 14px rgba(255, 132, 132, 0.95);
+            box-shadow:  4px 4px 7px rgba(197, 99, 99, 0.95),
+                        -4px -4px 7px rgba(255, 132, 132, 0.95);
+            font-size: 0.75rem;
         }
     
         .mobNavLi {
             padding: 0.5rem 0;
         }
+
+        .mobA {
+            display: visible;
+        }
     
         .mobA, .mobLiDrop, .mobNavA {
-            padding: 1.5rem;
-            font-size: clamp(16px, 2rem, 3.5rem);
+            padding: 0.5rem;
+            font-size: clamp(16px, 1.55rem, 3.5rem);
         }
     
         .mobUl, .mobLi, .mobA, .mobNavA {
             color: white;
-            width: 100%;
             text-decoration: none;
             list-style: none;
         }
-    
-    
-    
+        
         .mobCurrent_page {
             background-color: rgba(197, 99, 99, 0.95);
-            width: 100vw;
-    
+            /* width: 100%; */
+        }
+
+        .mobCurrent_service {
+            border-bottom: red 3px solid;
         }
 
     .nav {
@@ -1030,8 +1041,11 @@ main {
     .mobUl {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
     }
+
         /* Mobile Menu */
         .mobileMenu {
             display: grid;
@@ -1054,7 +1068,6 @@ main {
             height: calc(100vh - 45px); /* Adjust as needed */
             transition: all ease-in-out 0.75s;
         }
-    
         
         .mobLiDrop {
             color: black;
@@ -1063,17 +1076,18 @@ main {
     
         .mobServ_navA {
             text-decoration: none;
-            font-size: clamp(16px, 1.5rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
             color: white;
         }
     
         .mobServicesLi {
             list-style: none;
+            padding: .5rem;
             margin: 0.55rem;
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
-            
+            width: 100%;
         }
     
         #mobMenuTitle {
@@ -1081,40 +1095,46 @@ main {
         }
     
         #mobMenuCarrot {
-            
+            padding: 0;
+            margin: 0;
             display: grid;
             text-align: center;
             align-items: center;
-            width: 50px;
-            height: 50px;
+            width: 25px;
+            height: 25px;
             border-radius: 25%;
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
-            box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
-                        -8px -8px 14px rgba(255, 132, 132, 0.95);
+            box-shadow:  4px 4px 7px rgba(197, 99, 99, 0.95),
+                        -4px -4px 7px rgba(255, 132, 132, 0.95);
+            font-size: 0.75rem;
         }
     
         .mobNavLi {
             padding: 0.5rem 0;
         }
+
+        .mobA {
+            display: visible;
+        }
     
         .mobA, .mobLiDrop, .mobNavA {
-            padding: 1.5rem;
-            font-size: clamp(16px, 2rem, 3.5rem);
+            padding: 0.5rem;
+            font-size: clamp(16px, 1.55rem, 3.5rem);
         }
     
         .mobUl, .mobLi, .mobA, .mobNavA {
             color: white;
-            width: 100%;
             text-decoration: none;
             list-style: none;
         }
-    
-    
-    
+        
         .mobCurrent_page {
             background-color: rgba(197, 99, 99, 0.95);
-            width: 100vw;
-    
+            /* width: 100%; */
+        }
+
+        .mobCurrent_service {
+            border-bottom: red 3px solid;
         }
 
     .nav {
@@ -1326,14 +1346,15 @@ main {
     .mobUl {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
     }
 
         /* Mobile Menu */
         .mobileMenu {
             display: grid;
             justify-items: center;
-            align-items: center;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -1360,17 +1381,18 @@ main {
     
         .mobServ_navA {
             text-decoration: none;
-            font-size: clamp(16px, .75rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
             color: white;
         }
     
         .mobServicesLi {
             list-style: none;
+            padding: .5rem;
             margin: 0.55rem;
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
-            
+            width: 100%;
         }
     
         #mobMenuTitle {
@@ -1397,27 +1419,27 @@ main {
         }
 
         .mobA {
-            display: none;
+            display: visible;
         }
     
         .mobA, .mobLiDrop, .mobNavA {
             padding: 0.5rem;
-            font-size: clamp(16px, 0.7rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
         }
     
         .mobUl, .mobLi, .mobA, .mobNavA {
             color: white;
-            width: 100%;
             text-decoration: none;
             list-style: none;
         }
-    
-    
-    
+        
         .mobCurrent_page {
             background-color: rgba(197, 99, 99, 0.95);
-            width: 100vw;
-    
+            /* width: 100%; */
+        }
+
+        .mobCurrent_service {
+            border-bottom: red 3px solid;
         }
 
     .nav {
@@ -1595,6 +1617,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: center;
         width: 100%;
     }
 
@@ -1628,12 +1651,13 @@ main {
     
         .mobServ_navA {
             text-decoration: none;
-            font-size: clamp(16px, .75rem, 3.5rem);
+            font-size: clamp(16px, 1.55rem, 3.5rem);
             color: white;
         }
     
         .mobServicesLi {
             list-style: none;
+            padding: .5rem;
             margin: 0.55rem;
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
