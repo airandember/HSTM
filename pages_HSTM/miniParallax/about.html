@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HS Therapeutic Massage Home</title>
-    <link rel="stylesheet" href="../../css/miniParallax.css">
+    <link rel="stylesheet" href="../../css/about.css">
+    <script src="../../scripts/mobMenu.js" defer></script>
     <!-- <script src="../../scripts/tbd.js" defer></script> -->
 </head>
 <body class="about_body">
-    <img src="../../assets/img/water_0.webp" data-speedx="0.003" data-speedy="0.003"  alt="" class="parallax bg_img">
-    <img src="../../assets/img/water_1.webp" data-speedx="0.004" data-speedy="0.004" alt="" class="parallax trees1"><header class="app-bar">
+  <header>
     <h1 class="logo">HSTM</h1>
     <nav class="nav">
       <ul class="navUl">
@@ -26,7 +26,8 @@
       </ul>
     </nav>
   </header>
-      <main>
+  <main>
+    <div class="contentDiv">
         <h1>Your Next Favorite Escape</h1>
         <h2>Hibiscus Springs Therapeutic Massage is the best way to get away without needing to go far.</h2>
         <hr>
@@ -35,7 +36,7 @@
             <p class="aboutWriteUpCont">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
             </p><p>
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
             </p>
 
         </div>
@@ -45,13 +46,34 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapi
         <hr>
         <div class="meetTeamCont">
           <div class="empCont">
-            <img src="../../assets/img/hstm_placeholder.png" alt="">
+            <div class="imgCont">
+              <img src="../../assets/img/hstm_placeholder.png" alt="" id="portrait1">
+            </div>
             <div class="introEmp firstEmp">
               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>
             </div>
-          </div>
-          
-        </div>
-    </main>
+            </div>
+      </div>
+    </div>
+  </main>
       <footer></footer>
+      <div class="mobileMenu mobileOff">
+        <h2 id="mobMenuTitle">Menu</h2>
+        <ul class="mobUl">
+          <li class="mobLi"><a class="mobA " href="../../index.html">Home</a></li>
+          <li class="mobLiDrop">SERVICES
+              <ul class="mobServices_drop">
+                  <li class="mobServicesLi"><a class="mobServ_navA" href="new_client.html">New Client</a></li>
+                  <li class="mobServicesLi"><a class="mobServ_navA" href="ret_client.html">Returning</a></li>
+              </ul>
+          </li>
+          <li class="mobNavLi"><a class="mobNavA" href="FAQ.html">FAQ</a></li>
+          <li class="mobNavLi"><a class="mobNavA mobCurrent_page" href="about.html">About</a></li>
+          <li class="mobNavLi"><a class="mobNavA" href="contact.html">Contact</a></li>
+          <!-- <h2 id="mobMenuCarrot">⋁</h2> -->
+        </ul>
+        <h2 id="mobMenuCarrot">X</h2>
+      </div>
+    <img src="../../assets/img/Hibiscus_20.webp" alt="" class="bg_img">
+
 </body>

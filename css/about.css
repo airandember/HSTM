@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+
+.dark_logo {
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin: 0 auto 1rem auto;
+    color: white;
+    z-index: 9999;
+    background: rgba(150, 142, 132, 0.5);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+                -10px -10px 20px rgba(13, 3, 41, 0.5),
+                inset 0 0 10px rgba(255, 255, 255, 0.5),
+                inset 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.app-bar {
+    justify-content: space-evenly;
+}
+
+.aboutWriteUpCont {
+    line-height: 2.5;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.empCont {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.empCont img {
+    padding-right: 2rem;
+}
+
+.about_body {
+    display: grid;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.about_body main {
+    
+    max-width: 1600px;
+    background: rgba(52, 54, 77, 0.4);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+                -10px -10px 20px rgba(158, 248, 248, 0.5),
+                inset 0 0 10px rgba(255, 255, 255, 0.2),
+                inset 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    pointer-events: auto;
+    padding: 3rem;
+    color: white;
+}
+
+.navUl {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+    justify-content: space-evenly;
+}
+
+
+
+.navLi {
+    position: relative;
+}
+
+.navLiDrop {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.navLiDrop:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.nav li:hover .services_drop {
+    opacity: 1;
+}
+
+.navA {
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+}
+
+
+.naviLiDrop {
+    position: relative;
+    filter: blur(2px);
+    cursor: pointer;
+    
+}
+
+.navA:hover {
+    text-decoration: underline;
+}
+
+
+.services_drop {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(43, 29, 12, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translate(-3rem);
+    background-color: rgba(240, 135, 135, 0.92);
+    z-index: 1000000;
+    border-radius: 25px;
+    /* opacity: 0; */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.services_drop li:hover {
+    background-color: rgba(197, 99, 99, 0.95);
+    border-radius: 25px;
+}
+
+.serv_navA {
+    text-decoration: none;
+    color: white;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.naviLiDrop {
+    position: relative;
+    filter: blur(2px);
+    cursor: pointer;
+    
+}
+
+.navA:hover {
+    text-decoration: underline;
+}
+
+.current_page {
+    background-color: rgba(240, 135, 135, 0.92);
+}
+
+.servicesLi {
+    display: inline-block;
+    
+    list-style-type: none;
+    padding: 1.5rem;
+    margin: 0;
+    position: relative;
+}
+
+.bg_img {
+    position: fixed;
+    width: 1200px;
+    height: 1200px;
+    top: 0;
+    right: 10%;
+    z-index: -2;
+    opacity: .7;
+}
+
+#portrait1 {
+    width: 100%;
+    height: auto;
+}
+
+.imgCont {
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+
+@media only screen and (orientation: portrait) and (max-width: 850px) {
+    body {
+        padding: 0;
+    } 
+
+    .contentDiv {
+        padding: .5rem;
+    }
+
+      
+    .nav {
+        display: none;
+     }
+    
+    
+    /* Mobile Menu */
+     .mobileMenu {
+        display: grid;
+        justify-items: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        color: white;
+        background: rgba(240, 135, 135, 1);
+        z-index: 10000;
+    }
+
+    .mobileOff {
+        height: 35px;
+        transition: all ease-in-out 0.75s;
+    }
+
+    .mobileOpen {
+        height: calc(100vh - 38px); /* Adjust as needed */
+        transition: all ease-in-out 0.75s;
+    }
+
+    .mobUl {
+        display: block;
+    }
+
+    .mobLiDrop {
+        color: black;
+        /* border: 3px solid rgba(197, 99, 99, 0.95); */
+    }
+
+    .mobServ_navA {
+        text-decoration: none;
+        font-size: clamp(16px, 1.5rem, 3.5rem);
+        color: white;
+    }
+
+    .mobServicesLi {
+        list-style: none;
+        margin: 0.55rem;
+        background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
+        box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
+                    -8px -8px 14px rgba(255, 132, 132, 0.95);
+        border-radius: 25px;
+    }
+
+    #mobMenuTitle {
+        z-index: 20000;
+    }
+
+    #mobMenuCarrot {
+        
+        display: grid;
+        text-align: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 25%;
+        background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
+        box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
+                    -8px -8px 14px rgba(255, 132, 132, 0.95);
+    }
+
+    .mobNavLi {
+        padding: 0.5rem 0;
+    }
+
+    .mobA, .mobLiDrop, .mobNavA {
+        padding: 1.5rem;
+        font-size: clamp(16px, 2rem, 3.5rem);
+    }
+
+    .mobUl, .mobLi, .mobA, .mobNavA {
+        color: white;
+        width: 100%;
+        text-decoration: none;
+        list-style: none;
+    }
+
+
+
+    .mobCurrent_page {
+        background-color: rgba(197, 99, 99, 0.95);
+        width: 100vw;
+
+    }
+
+    .mobCurrent_service {
+        box-shadow: 0 0 5px rgb(255, 255, 232);
+    }
+
+    .empCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0rem;
+    }
+
+
+}
+
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+    body {
+        padding: 0;
+    } 
+
+    .contentDiv {
+        padding: .5rem;
+    }
+    
+    .nav {
+        display: none;
+    }
+
+    .mobUl {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+        /* Mobile Menu */
+        .mobileMenu {
+            display: grid;
+            justify-items: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+            color: white;
+            background: rgba(240, 135, 135, 1);
+            z-index: 10000;
+        }
+    
+        .mobileOff {
+            height: 35px;
+            transition: all ease-in-out 0.75s;
+        }
+    
+        .mobileOpen {
+            height: calc(100vh - 45px); /* Adjust as needed */
+            transition: all ease-in-out 0.75s;
+        }
+        
+        .mobLiDrop {
+            color: black;
+            /* border: 3px solid rgba(197, 99, 99, 0.95); */
+        }
+    
+        .mobServ_navA {
+            text-decoration: none;
+            font-size: clamp(16px, 1.55rem, 3.5rem);
+            color: white;
+        }
+    
+        .mobServicesLi {
+            list-style: none;
+            padding: .5rem;
+            margin: 0.55rem;
+            background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
+            box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
+                        -8px -8px 14px rgba(255, 132, 132, 0.95);
+            width: 100%;
+            border-radius: 25px;
+        }
+    
+        #mobMenuTitle {
+            z-index: 20000;
+        }
+    
+        #mobMenuCarrot {
+            padding: 0;
+            margin: 0;
+            display: grid;
+            text-align: center;
+            align-items: center;
+            width: 25px;
+            height: 25px;
+            border-radius: 25%;
+            background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
+            box-shadow:  4px 4px 7px rgba(197, 99, 99, 0.95),
+                        -4px -4px 7px rgba(255, 132, 132, 0.95);
+            font-size: 0.75rem;
+        }
+    
+        .mobNavLi {
+            padding: 0.5rem 0;
+        }
+
+        .mobA {
+            display: visible;
+        }
+    
+        .mobA, .mobLiDrop, .mobNavA {
+            padding: 0.5rem;
+            font-size: clamp(16px, 1.55rem, 3.5rem);
+        }
+    
+        .mobUl, .mobLi, .mobA, .mobNavA {
+            color: white;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        .mobCurrent_page {
+            background-color: rgba(197, 99, 99, 0.95);
+            width: 100%;
+        }
+
+        .mobCurrent_service {
+            box-shadow: 0 0 5px rgb(255, 255, 232);
+        }
+}
