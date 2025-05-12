@@ -338,7 +338,7 @@ iframe {
     font-size: clamp(1.75rem, 1.5vw, 3rem)
 }
 
-@media only screen and (orientation: portrait) and (max-width: 758px) {
+@media only screen and (orientation: portrait) and (max-width: 850px) {
     body {
         padding: 0;
     } 
@@ -456,7 +456,7 @@ iframe {
     }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 758px) {
+@media only screen and (orientation: landscape) and (max-width: 900) {
     body {
         padding: 0;
     } 
