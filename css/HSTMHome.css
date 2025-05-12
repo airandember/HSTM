@@ -92,7 +92,7 @@ main {
         background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
         box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                     -8px -8px 14px rgba(255, 132, 132, 0.95);
-        
+        border-radius: 25px;
     }
 
     #mobMenuTitle {
@@ -787,6 +787,7 @@ main {
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
+            border-radius: 25px;
             width: 100%;
         }
     
@@ -1087,6 +1088,7 @@ main {
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
+            border-radius: 25px;
             width: 100%;
         }
     
@@ -1392,6 +1394,8 @@ main {
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
+            border-radius: 25px;
+            
             width: 100%;
         }
     
@@ -1662,6 +1666,7 @@ main {
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
+            border-radius: 25px;
             width: 100%;
         }
     

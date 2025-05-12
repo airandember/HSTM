@@ -481,6 +481,8 @@ iframe {
     font-size: clamp(1.75rem, 1.5vw, 3rem)
 }
 
+
+
 @media only screen and (orientation: portrait) and (max-width: 850px) {
     body {
         padding: 0;
@@ -561,6 +563,7 @@ iframe {
         background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
         box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                     -8px -8px 14px rgba(255, 132, 132, 0.95);
+                    border-radius: 25px;
         
     }
 
@@ -629,6 +632,11 @@ iframe {
         margin: 0 0 1rem 0;
 
     }
+
+    .mobCurrent_service {
+        box-shadow: 0 0 5px rgb(255, 255, 232);
+    }
+
 }
 
 @media only screen and (orientation: landscape) and (max-width: 900px) {
@@ -689,7 +697,7 @@ iframe {
             background: linear-gradient(145deg, rgba(255, 132, 132, 0.95), rgba(197, 99, 99, 0.95));
             box-shadow:  8px 8px 14px rgba(197, 99, 99, 0.95),
                         -8px -8px 14px rgba(255, 132, 132, 0.95);
-            
+            border-radius: 25px;
         }
     
         #mobMenuTitle {
@@ -732,13 +740,11 @@ iframe {
             list-style: none;
         }
     
-    
-    
         .mobCurrent_service {
-            box-shadow: 2px 2px 15px rgb(255, 255, 232);
-
-    
+            box-shadow: 0 0 5px rgb(255, 255, 232);
         }
+    
+        
 
         .timeContRetCont {
             flex-direction: column;
