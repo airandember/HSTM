@@ -1540,8 +1540,8 @@ main {
     .trees6 {
         position: fixed;
         top: 0;
-        left: -25%;
-        transform: none;
+        left: -35%;
+        transform: translateX(0), translateY(0);
         width: 600px;
     }
 
@@ -1734,7 +1734,7 @@ main {
     .trees6 {
         position: fixed;
         bottom: -400px;
-        right: 0%;
+        right: 0;
         transform: none !important;
         width: 600px;
 
