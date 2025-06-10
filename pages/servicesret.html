@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Returning Clients | Hibiscus Springs Massage Therapy</title>
+    <meta name="description" content="Book your next massage therapy session at Hibiscus Springs. Flexible duration options for our valued returning clients.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles2.css">
+    <script src="../scripts/menu.js" defer></script>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="/" class="logo-link">Hibiscus Springs</a>
+                    </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="desktop-nav">
+                        <div class="services-dropdown">
+                            <button class="dropdown-button">
+                                Services
+                                <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="/pages/servicesnew.html">New Clients</a>
+                                <a href="/pages/servicesret.html">Returning Clients</a>
+                            </div>
+                        </div>
+                        <a href="/pages/tmj.html" class="nav-link">TMJ Therapy</a>
+                        <a href="/pages/about.html" class="nav-link">About</a>
+                        <a href="/pages/contact.html" class="nav-link">Contact</a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="mobile-menu-button-container">
+                        <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+                            <svg class="menu-icon" id="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile menu -->
+                <div class="mobile-menu" id="mobile-menu">
+                    <div class="mobile-menu-content">
+                        <div class="mobile-services-menu">
+                            <button class="mobile-dropdown-button">
+                                Services
+                                <svg class="mobile-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="mobile-dropdown-content">
+                                <a href="/pages/servicesnew.html" class="mobile-nav-link">New Clients</a>
+                                <a href="/pages/servicesret.html" class="mobile-nav-link">Returning Clients</a>
+                            </div>
+                        </div>
+                        <a href="/pages/tmj.html" class="mobile-nav-link">TMJ Therapy</a>
+                        <a href="/pages/about.html" class="mobile-nav-link">About</a>
+                        <a href="/pages/contact.html" class="mobile-nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="text-center">
+                        <h1 class="hero-title">
+                            Welcome Back to Hibiscus Springs
+                        </h1>
+                        <p class="hero-subtitle">
+                            Choose from our expanded range of services and durations, tailored for our returning clients.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Grid -->
+            <section class="services-section">
+                <div class="container">
+                    <!-- Relaxing Massage -->
+                    <div class="massage-card">
+                        <h2 class="massage-title">Relaxing Massage</h2>
+                        <p class="massage-description">Choose your perfect duration for deep relaxation. Our signature massage therapy tailored to your preferences.</p>
+                        <div class="time-options">
+                            <a href="#" class="time-option-button">
+                                <span class="time-duration">30 Minutes</span>
+                                <span class="time-price">$50</span>
+                            </a>
+                            <a href="#" class="time-option-button">
+                                <span class="time-duration">45 Minutes</span>
+                                <span class="time-price">$70</span>
+                            </a>
+                            <a href="#" class="time-option-button">
+                                <span class="time-duration">60 Minutes</span>
+                                <span class="time-price">$80</span>
+                            </a>
+                            <a href="#" class="time-option-button">
+                                <span class="time-duration">75 Minutes</span>
+                                <span class="time-price">$100</span>
+                            </a>
+                            <a href="#" class="time-option-button">
+                                <span class="time-duration">90 Minutes</span>
+                                <span class="time-price">$115</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- TMJD Massage -->
+                    <div class="massage-card">
+                        <h2 class="massage-title">TMJD Massage</h2>
+                        <p class="massage-description">Continued care for jaw pain and tension relief. Choose the duration that best suits your maintenance needs.</p>
+                        <div class="time-options">
+                            <a href="#" class="time-option-button">
+                                <span class="time-duration">30 Minutes</span>
+                                <span class="time-price">$55</span>
+                            </a>
+                            <a href="#" class="time-option-button">
+                                <span class="time-duration">60 Minutes</span>
+                                <span class="time-price">$95</span>
+                                <span class="time-note">Focused treatment</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Indian Head Massage -->
+                    <div class="massage-card">
+                        <h2 class="massage-title">Indian Head Massage</h2>
+                        <p class="massage-description">Traditional techniques for upper body stress relief. Perfect for headache relief and mental clarity.</p>
+                        <div class="time-options">
+                            <a href="#" class="time-option-button">
+                                <span class="time-duration">45 Minutes</span>
+                                <span class="time-price">$60</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loyalty Benefits -->
+            <section class="benefits-section">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="benefits-title">Loyalty Benefits</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <h3 class="benefit-subtitle">Flexible Durations</h3>
+                                <p>More options to fit your schedule and needs</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h3 class="benefit-subtitle">Loyalty Rewards</h3>
+                                <p>Earn points towards free treatments</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h3 class="benefit-subtitle">Priority Booking</h3>
+                                <p>Early access to peak time slots</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="text-center">
+                    <p class="footer-text">&copy; 2025 Hibiscus Springs Massage Therapy. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../scripts/main.js"></script>
+</body>
+</html> 

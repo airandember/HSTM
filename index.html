@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hibiscus Springs Massage Therapy - TMJ Therapy & Wellness</title>
+    <meta name="description" content="Professional massage therapy specializing in TMJ therapy, Swedish massage, deep tissue, and wellness treatments. Book your appointment today.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="/" class="logo-link">Hibiscus Springs</a>
+                    </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="desktop-nav">
+                        <div class="services-dropdown">
+                            <button class="dropdown-button">
+                                Services
+                                <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="/pages/servicesnew.html">New Clients</a>
+                                <a href="/pages/servicesret.html">Returning Clients</a>
+                            </div>
+                        </div>
+                        <a href="/pages/tmj.html" class="nav-link">TMJ Therapy</a>
+                        <a href="/pages/about.html" class="nav-link">About</a>
+                        <a href="/pages/contact.html" class="nav-link">Contact</a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="mobile-menu-button-container">
+                        <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+                            <svg class="menu-icon" id="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile menu -->
+                <div class="mobile-menu" id="mobile-menu">
+                    <div class="mobile-menu-content">
+                        <div class="mobile-services-menu">
+                            <button class="mobile-dropdown-button">
+                                Services
+                                <svg class="mobile-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="mobile-dropdown-content">
+                                <a href="/pages/servicesnew.html" class="mobile-nav-link">New Clients</a>
+                                <a href="/pages/servicesret.html" class="mobile-nav-link">Returning Clients</a>
+                            </div>
+                        </div>
+                        <a href="/pages/tmj.html" class="mobile-nav-link">TMJ Therapy</a>
+                        <a href="/pages/about.html" class="mobile-nav-link">About</a>
+                        <a href="/pages/contact.html" class="mobile-nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="relative bg-gradient-to-r from-hibiscus-50 to-sage-50 section-padding">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="text-left relative">
+                            <div class="absolute inset-0 bg-contain bg-no-repeat bg-center opacity-10" style="background-image: url('/assets/images/yellowhibiscus.png');"></div>
+                            <div class="relative z-10">
+                                <h1 class="hero-title mb-6">
+                                    <span class="text-gradient">Where</span>
+                                    <span class="block text-hibiscus-600">Healing</span>
+                                    <span class="text-gradient-reverse">Blooms</span>
+                                </h1>
+                                <p class="text-xl text-gray-600 mb-8 max-w-2xl">
+                                    Experience professional massage therapy with specialized TMJ treatment. New clients receive an extra 15 minutes for personalized care and intake.
+                                </p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="/book" class="btn-primary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-2"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                                        Book Your Session
+                                    </a>
+                                    <a href="#" class="btn-outline" id="view-services-btn">View Services</a>
+                                </div>
+                                <div class="flex items-center space-x-6 pt-4">
+                                    <div class="text-sm text-gray-600">
+                                        <span class="font-semibold text-gray-900">Licensed</span> Massage Therapists
+                                    </div>
+                                    <div class="text-gray-300 mx-4">|</div>
+                                    <div class="text-sm text-gray-600">
+                                        <span class="font-semibold text-gray-900">5+ Years</span> Experience
+                                    </div>
+                                    <div class="text-gray-300 mx-4">|</div>
+                                    <div class="text-sm text-gray-600">
+                                        <span class="font-semibold text-gray-900">TMJ</span> Specialized
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-hstm-box">
+                            <div class="relative aspect-ratio-16-9">
+                                <div class="relative z-10">
+                                    <div class="bg-gradient-to-br from-hibiscus-200 to-sage-200 rounded-2xl p-8 shadow-2xl">
+                                        <div class="bg-white rounded-xl p-6 text-center">
+                                            <div class="w-32 h-32 bg-gradient-to-br from-hibiscus-500 to-hibiscus-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                                <!--<span class="text-4xl text-white font-serif">🌺</span>-->
+                                                <img src="/assets/images/yellowhibiscus.png" alt="Hibiscus Springs Massage Therapy" class="w-full h-full object-cover" style="width: 85px; height: 85px; transform: scalex(-1);">
+                                            </div>
+                                            <h3 class="text-3xl font-serif font-bold text-gray-900 mb-4">Healing Touch for <br>Body & Mind</h3>
+                                            <p class="text-gray-600 text-lg">Hibiscus Springs Massage Therapy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute -top-4 -right-4 w-20 h-20 bg-hibiscus-500 rounded-full opacity-20 float-animation"></div>
+                                <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-sage-500 rounded-full opacity-20 float-animation" style="animation-delay: 1s;"></div>
+                                <div class="absolute top-1/2 -right-8 w-12 h-12 bg-hibiscus-400 rounded-full opacity-15 float-animation" style="animation-delay: 2s;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="section-padding bg-white">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
+                            Why Choose Hibiscus Springs?
+                        </h2>
+                        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                            We combine expert techniques with personalized care to provide the best massage therapy experience
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-hibiscus-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-hibiscus-600"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Expert Therapists</h3>
+                            <p class="text-gray-600">Licensed and experienced massage therapists specializing in various techniques</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-hibiscus-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-hibiscus-600"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">TMJ Specialization</h3>
+                            <p class="text-gray-600">Specialized jaw massage therapy for temporomandibular joint dysfunction relief</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-hibiscus-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-hibiscus-600"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Personalized Care</h3>
+                            <p class="text-gray-600">New clients receive extra 15 minutes for intake and personalized treatment planning</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-hibiscus-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-hibiscus-600"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Premium Experience</h3>
+                            <p class="text-gray-600">Relaxing environment with top-quality oils and techniques for ultimate wellness</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Services Section -->
+            <section class="section-padding bg-gray-50">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
+                            Our Featured Services
+                        </h2>
+                        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                            From relaxation to specialized TMJ therapy, we offer a range of services to meet your wellness needs
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="card p-6">
+                            <h3 class="text-xl font-semibold mb-2">TMJ Therapy Massage</h3>
+                            <p class="text-gray-600 mb-4">Specialized jaw massage therapy focusing on temporomandibular joint dysfunction and related muscle tension.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-500">45 min</span>
+                                <span class="font-semibold">$95</span>
+                            </div>
+                        </div>
+                        <div class="card p-6">
+                            <h3 class="text-xl font-semibold mb-2">Swedish Massage</h3>
+                            <p class="text-gray-600 mb-4">A gentle, relaxing massage using long strokes and kneading to reduce stress and promote relaxation.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-500">60 min</span>
+                                <span class="font-semibold">$80</span>
+                            </div>
+                        </div>
+                        <div class="card p-6">
+                            <h3 class="text-xl font-semibold mb-2">Deep Tissue Massage</h3>
+                            <p class="text-gray-600 mb-4">A more intense massage targeting deeper layers of muscle and connective tissue to address chronic pain.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-500">60 min</span>
+                                <span class="font-semibold">$90</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <a href="/services" class="btn-primary">
+                            <span>View All Services</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block ml-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TMJ Specialization Highlight -->
+            <section class="section-padding bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">TMJ Therapy Specialist</h2>
+                            <p class="text-lg mb-6 text-hibiscus-100">
+                                Suffering from jaw pain, clicking, or tension? Our specialized TMJ therapy focuses on the temporomandibular joint and surrounding muscles to provide relief from chronic jaw issues.
+                            </p>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-hibiscus-300 rounded-full"></div>
+                                    <span>Intraoral and external jaw massage techniques</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-hibiscus-300 rounded-full"></div>
+                                    <span>Targeted muscle tension relief</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-hibiscus-300 rounded-full"></div>
+                                    <span>Personalized treatment plans</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-hibiscus-300 rounded-full"></div>
+                                    <span>Pain assessment and tracking</span>
+                                </li>
+                            </ul>
+                            <a href="/tmj-therapy" class="btn-outline border-white text-white hover:bg-white hover:text-hibiscus-600">
+                                Learn More About TMJ Therapy
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block ml-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                        <div class="relative">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+                                <div class="text-center">
+                                    <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                                    </div>
+                                    <h3 class="text-2xl font-semibold mb-4">New Client Special</h3>
+                                    <p class="text-hibiscus-100 mb-6">
+                                        First-time clients receive an extra 15 minutes for comprehensive assessment
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Service Selection Modal -->
+        <div class="modal-overlay" id="service-modal-overlay">
+            <div class="modal" id="service-modal">
+                <h2 class="modal-title">Choose Your Journey</h2>
+                <p class="modal-description">Select the option that best describes you to view our tailored services and pricing.</p>
+                <div class="modal-buttons">
+                    <a href="/pages/servicesnew.html" class="modal-button new-client">
+                        <span class="modal-button-title">New Client</span>
+                        <span class="modal-button-subtitle">First time visit</span>
+                    </a>
+                    <a href="/pages/servicesret.html" class="modal-button returning-client">
+                        <span class="modal-button-title">Returning Client</span>
+                        <span class="modal-button-subtitle">Welcome back</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center">
+                    <p class="text-gray-400">&copy; 2025 Hibiscus Springs Massage Therapy. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/main.js"></script>
+    <script>
+        // Service Selection Modal
+        const viewServicesBtn = document.getElementById('view-services-btn');
+        const serviceModal = document.getElementById('service-modal');
+        const serviceModalOverlay = document.getElementById('service-modal-overlay');
+
+        viewServicesBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            serviceModalOverlay.classList.add('show');
+            // Small delay to ensure the fade-in animation works
+            setTimeout(() => {
+                serviceModal.classList.add('show');
+            }, 10);
+        });
+
+        serviceModalOverlay.addEventListener('click', (e) => {
+            if (e.target === serviceModalOverlay) {
+                serviceModal.classList.remove('show');
+                setTimeout(() => {
+                    serviceModalOverlay.classList.remove('show');
+                }, 300);
+            }
+        });
+    </script>
+</body>
+</html> 
