@@ -59,4 +59,89 @@
         margin-top: 1rem;
         width: 100%;
     }
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background-image: url('../assets/images/mobile-menu-swipe-up.png');
+    background-size: cover;
+    background-position: center;
+    transform: translateY(150vh);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: visible;
+    z-index: 900;
+}
+
+.mobile-menu-background.show {
+    transform: translateY(-50vh);
+}
+
+/* Update mobile menu styles to work with background */
+.mobile-menu {
+    position: fixed;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    background-color: transparent;
+    padding: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    z-index: 2999;
+    max-width: 90%;
+    width: 320px;
+    color: white;
+    text-align: center;
+}
+
+.mobile-menu.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Center the menu content */
+.mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 3000;
+    position: relative;
+}
+
+.mobile-nav-link {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 3002;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-menu.show .mobile-nav-link {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add staggered delay for each link */
+.mobile-menu.show .mobile-nav-link:nth-child(1) { transition-delay: 0.1s; }
+.mobile-menu.show .mobile-nav-link:nth-child(2) { transition-delay: 0.2s; }
+.mobile-menu.show .mobile-nav-link:nth-child(3) { transition-delay: 0.3s; }
+.mobile-menu.show .mobile-nav-link:nth-child(4) { transition-delay: 0.4s; }
+.mobile-menu.show .mobile-nav-link:nth-child(5) { transition-delay: 0.5s; }
+.mobile-menu.show .mobile-nav-link:nth-child(6) { transition-delay: 0.6s; }
+
+.mobile-nav-link:hover {
+    color: var(--hibiscus-100);
+    transform: translateY(-2px);
 } 
