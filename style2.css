@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+.cardFaqCont {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.cardFaq {
+    font-family: 'Poppins', sans-serif;
+    height: 250px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 39px;
+    background: linear-gradient(145deg, #ccbcbc, #f0f0f0);
+    box-shadow: 5px 5px 10px #797979,
+                -5px -5px 10px #ffffff;
+    transition: box-shadow 0.5s ease-in-out;
+   
+}
+
+.cardFaq:hover {
+    box-shadow: 14px 14px 15px #797979,
+                -4px -4px 5px #ffffff;
+}
+
+.cardFaq h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.cardFaq p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cardFaqCont {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .cardFaqCont {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cardFaqCont {
+        grid-template-columns: 1fr;
+    }
+    
+    .cardFaq {
+        margin: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+} 
