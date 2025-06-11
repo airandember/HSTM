@@ -1,4 +1,8 @@
 /* Base styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --hibiscus-50: #fdf2f8;
     --hibiscus-100: #fce7f3;
