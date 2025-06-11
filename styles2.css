@@ -262,6 +262,11 @@ html {
 
 /* Components */
 
+#hero-section {
+    height: max-content;
+    overflow: hidden;
+}
+
 .cardFaqCont {
     max-width: 1200px;
     display: flex;
@@ -638,32 +643,97 @@ a {
 /* Hero Section Layout */
 .hero-hstm-box {
     width: 100%;
+    height: max-content;
     max-width: 900px;
     margin: 0 auto;
     z-index: 100;
-    height: 100%;
+    position: relative;
+    padding: 2rem 1rem;
 }
 
 .hero-hstm-box .aspect-ratio-container {
     position: relative;
     width: 100%;
-    /* Default for mobile - square */
-    padding-bottom: 100%;
+    min-height: 400px;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 768px) {
     .hero-hstm-box .aspect-ratio-container {
-        /* 16:9 aspect ratio for desktop */
-        padding-bottom: 56.25%;
+        min-height: 500px;
+        padding: 3rem 2rem;
     }
 }
 
 .hero-hstm-box .content-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    z-index: 100;
+}
+
+/* Responsive text for hero */
+.hero-hstm-box .text-gradient {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+/* Floating elements - keep them within bounds */
+.hero-hstm-box .absolute {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+}
+
+.hero-hstm-box .absolute.-top-4 {
+    top: 1rem;
+}
+
+.hero-hstm-box .absolute.-bottom-4 {
+    bottom: 1rem;
+}
+
+.hero-hstm-box .absolute.-right-4,
+.hero-hstm-box .absolute.-right-8 {
+    right: 1rem;
+}
+
+.hero-hstm-box .absolute.-left-4 {
+    left: 1rem;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+    .hero-hstm-box {
+        padding: 1rem 0.5rem;
+    }
+    
+    .hero-hstm-box .aspect-ratio-container {
+        min-height: 350px;
+        padding: 1rem 0.5rem;
+    }
+    
+    .hero-hstm-box .text-gradient {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+    }
+    
+    /* Make floating elements smaller on mobile */
+    .hero-hstm-box .w-20 {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .hero-hstm-box .w-16 {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .hero-hstm-box .w-12 {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 .text-left {
