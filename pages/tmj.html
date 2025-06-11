@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="../styles2.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-</head>
+    <script src="../scripts/menu.js" defer></script>
+    <script src="../scripts/main.js" defer></script></head>
 <body>
     <div class="min-h-screen flex flex-col">
         <header>
             <nav>
                 <div class="nav-container">
                     <div class="logo">
-                        <a href="/" class="logo-link">Hibiscus Springs</a>
+                        <a href="/" class="text-2xl font-bold text-gray-800 text-gradient">HSTM</a>
+
                     </div>
                     
                     <!-- Desktop Navigation -->
@@ -52,18 +54,8 @@
                 <!-- Mobile menu -->
                 <div class="mobile-menu" id="mobile-menu">
                     <div class="mobile-menu-content">
-                        <div class="mobile-services-menu">
-                            <button class="mobile-dropdown-button">
-                                Services
-                                <svg class="mobile-dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="mobile-dropdown-content">
-                                <a href="/pages/servicesnew.html" class="mobile-nav-link">New Clients</a>
-                                <a href="/pages/servicesret.html" class="mobile-nav-link">Returning Clients</a>
-                            </div>
-                        </div>
+                        <a href="/pages/servicesnew.html" class="mobile-nav-link">New Clients</a>
+                        <a href="/pages/servicesret.html" class="mobile-nav-link">Returning Clients</a>
                         <a href="/pages/tmj.html" class="mobile-nav-link">TMJ Therapy</a>
                         <a href="/pages/about.html" class="mobile-nav-link">About</a>
                         <a href="/pages/contact.html" class="mobile-nav-link">Contact</a>
