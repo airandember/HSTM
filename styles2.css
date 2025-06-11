@@ -1055,7 +1055,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%) scale(0.95);
     background-color: transparent;
-    padding: 2rem;
+    padding: 1rem;
     opacity: 0;
     transition: all 3.6s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 2999; /* Higher than background */
@@ -1063,7 +1063,6 @@ nav {
     width: 320px;
     color: white;
     text-align: center;
-
 }
 
 .mobile-menu.show {
@@ -1074,14 +1073,64 @@ nav {
     transition: opacity 3.5s ease-in-out;
 }
 
-/* Center the menu content */
+/* Center the menu content with flex layout (default for portrait) */
 .mobile-menu-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     z-index: 3000;
-    position: relative; /* Create stacking context */
+    position: relative;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+/* Landscape orientation adjustments - switch to grid */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .mobile-menu {
+        top: calc(50vh + 36px);
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.95);
+        padding: 0.5rem;
+        width: 400px;
+        max-width: 95%;
+    }
+    
+    .mobile-menu.show {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
+    .mobile-menu-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        max-height: calc(100vh - 100px);
+    }
+    
+    .mobile-nav-link {
+        font-size: 1rem;
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+/* Very small landscape screens */
+@media screen and (orientation: landscape) and (max-height: 400px) {
+    .mobile-menu {
+        top: calc(50vh + 36px);
+        padding: 0.25rem;
+        width: 450px;
+    }
+    
+    .mobile-menu-content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        max-height: calc(100vh - 90px);
+    }
+    
+    .mobile-nav-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.25rem;
+    }
 }
 
 .mobile-nav-link {
