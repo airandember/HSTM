@@ -59,6 +59,10 @@ html {
     flex-wrap: wrap;
 }
 
+.flex-no-wrap {
+    flex-wrap: nowrap;
+}
+
 .flex-row {
     flex-direction: row;
 }
@@ -1438,6 +1442,15 @@ nav {
 }
 
 /* Neumorphic Service Options */
+.pink-neu-card {
+    border-radius: 48px;
+background: linear-gradient(145deg, #cb1a64, #ab1654);
+box-shadow:  26px 26px 52px #ba185b,
+             -26px -26px 52px #c2185f;
+             max-width: 400px;
+
+}
+
 .massage-card {
     background: white;
     border-radius: 1.5rem;
