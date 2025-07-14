@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Haven - Your Wellness Sanctuary | Hibiscus Springs Massage Therapy</title>
+    <meta name="description" content="Experience tranquility at The Haven - a secluded wellness sanctuary featuring zero gravity massage chairs, meditation spaces, and infrared sauna therapy. Your escape from the everyday.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles2.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="/" class="text-2xl font-bold text-gray-800 text-gradient">HSTM</a>
+                    </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="desktop-nav">
+                        <div class="services-dropdown">
+                            <button class="dropdown-button">
+                                Services
+                                <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="/pages/servicesnew.html">New Clients</a>
+                                <a href="/pages/servicesret.html">Returning Clients</a>
+                            </div>
+                        </div>
+                        <a href="/pages/tmj.html" class="nav-link">TMJ Therapy</a>
+                        <a href="/pages/haven.html" class="nav-link">The Haven</a>
+                        <a href="/pages/about.html" class="nav-link">About</a>
+                        <a href="/pages/contact.html" class="nav-link">Contact</a>
+                        <a href="/pages/faq.html" class="nav-link">FAQ</a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="mobile-menu-button-container">
+                        <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+                            <svg class="menu-icon" id="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile menu -->
+                <div class="mobile-menu" id="mobile-menu">
+                    <div class="mobile-menu-content">
+                        <a href="/pages/servicesnew.html" class="mobile-nav-link">New Clients</a>
+                        <a href="/pages/servicesret.html" class="mobile-nav-link">Returning Clients</a>
+                        <a href="/pages/tmj.html" class="mobile-nav-link">TMJ Therapy</a>
+                        <a href="/pages/haven.html" class="mobile-nav-link">The Haven</a>
+                        <a href="/pages/contact.html" class="mobile-nav-link">Contact</a>
+                        <a href="/pages/faq.html" class="mobile-nav-link">FAQ</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="relative bg-gradient-to-r from-hibiscus-50 to-sage-50 section-padding">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-900 mb-6">
+                            The Haven
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                            A different kind of escape room. Step into your personal sanctuary where healing meets tranquility, and discover a new dimension of wellness beyond the treatment table.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="/pages/contact.html" class="btn-primary">Book Your Haven Experience</a>
+                            <a href="#pricing" class="btn-outline">View Pricing</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction Section -->
+            <section class="bg-white section-padding">
+                <div class="max-w-7xl mx-auto">
+                    <div class="max-w-4xl mx-auto text-center">
+                        <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-8">
+                            Your Personal Wellness Sanctuary
+                        </h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            The Haven represents a revolutionary approach to wellness - a secluded space designed for profound relaxation and rejuvenation. Whether you're seeking a peaceful escape from daily stress, complement to your chiropractic care, or a luxurious add-on to your massage therapy, The Haven offers a unique wellness experience tailored to your needs.
+                        </p>
+                        <p class="text-lg text-gray-600">
+                            <em>Perfect for clients who want to experience wellness on their own terms - no hands-on therapy required, just pure, personalized tranquility.</em>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="bg-gray-50 section-padding">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 text-center mb-12">
+                        Haven Experiences
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Zero Gravity Massage Chair -->
+                        <div class="card p-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-hibiscus-500 to-hibiscus-600 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">Zero Gravity Massage Chair</h3>
+                            <p class="text-gray-600">
+                                Experience weightless relaxation in our state-of-the-art zero gravity massage chair. Let advanced technology melt away tension while you float in perfect comfort.
+                            </p>
+                        </div>
+
+                        <!-- Meditation Station -->
+                        <div class="card p-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-sage-500 to-sage-600 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">Meditation & Breathwork Station</h3>
+                            <p class="text-gray-600">
+                                Center yourself in our dedicated mindfulness space, complete with guided meditation resources and breathwork tools for deep inner peace.
+                            </p>
+                        </div>
+
+                        <!-- Infrared Sauna -->
+                        <div class="card p-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-hibiscus-400 to-hibiscus-500 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">Infrared Sauna <span class="text-sm text-hibiscus-600">(Coming Soon)</span></h3>
+                            <p class="text-gray-600">
+                                Detoxify and rejuvenate with gentle infrared heat therapy. Perfect for muscle recovery, stress relief, and overall wellness enhancement.
+                            </p>
+                        </div>
+
+                        <!-- Wellness Amenities -->
+                        <div class="card p-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-sage-400 to-sage-500 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">Wellness Amenities</h3>
+                            <p class="text-gray-600">
+                                Enhance your experience with our curated selection of wellness tools including eye massagers, affirmation cards, and other mindfulness resources.
+                            </p>
+                        </div>
+
+                        <!-- Flexible Experience -->
+                        <div class="card p-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-hibiscus-300 to-hibiscus-400 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">Personalized Experience</h3>
+                            <p class="text-gray-600">
+                                Your Haven experience is entirely customizable. Use it as a standalone wellness retreat or combine with massage therapy for the ultimate relaxation journey.
+                            </p>
+                        </div>
+
+                        <!-- Future Amenities -->
+                        <div class="card p-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-sage-300 to-sage-400 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">Evolving Sanctuary</h3>
+                            <p class="text-gray-600">
+                                We're continuously expanding The Haven experience with new amenities like weighted blankets, journaling stations, and creative therapy tools.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Section -->
+            <section id="pricing" class="bg-white section-padding">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-3xl font-serif font-bold text-gray-900 text-center mb-12" style="font-size: 3.5rem; z-index:1000">
+                        Haven Pricing
+                    </h2>
+                    
+                    <!-- Individual Session Cards -->
+                    <div class="flex flex-row flex-wrap justify-center">
+                        
+                        <!-- 20 Minute Session -->
+                        <div class="massage-card card_three_cross p-6 text-center">
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Quick Escape</h3>
+                            <div class="text-3xl font-bold text-hibiscus-600 mb-2">$35</div>
+                            <div class="text-lg text-gray-600 mb-4">20 Minutes</div>
+                            <div class="text-sm text-sage-600 mb-4">
+                                <strong>$30</strong> when booked with massage therapy
+                            </div>
+                            <p class="text-gray-600 mb-6">
+                                Perfect for a quick reset during your busy day or as a peaceful prelude to your wellness routine.
+                            </p>
+                            <a href="/pages/contact.html" class="btn-primary">Book Now</a>
+                        </div>
+
+                        <!-- 40 Minute Session -->
+                        <div class="massage-card card_three_cross p-6 text-center relative">
+                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-hibiscus-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                                Most Popular
+                            </div>
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Deep Relaxation</h3>
+                            <div class="text-3xl font-bold text-hibiscus-600 mb-2">$55</div>
+                            <div class="text-lg text-gray-600 mb-4">40 Minutes</div>
+                            <div class="text-sm text-sage-600 mb-4">
+                                <strong>$50</strong> when booked with massage therapy
+                            </div>
+                            <p class="text-gray-600 mb-6">
+                                The ideal duration for complete relaxation and rejuvenation. Enough time to truly disconnect and recharge.
+                            </p>
+                            <a href="/pages/contact.html" class="btn-primary">Book Now</a>
+                        </div>
+
+                        <!-- 60 Minute Session -->
+                        <div class="massage-card card_three_cross p-6 text-center">
+                            <h3 class="text-xl font-serif font-bold text-gray-900 mb-4">Ultimate Sanctuary</h3>
+                            <div class="text-3xl font-bold text-hibiscus-600 mb-2">$70</div>
+                            <div class="text-lg text-gray-600 mb-4">60 Minutes</div>
+                            <div class="text-sm text-sage-600 mb-4">
+                                <strong>$65</strong> when booked with massage therapy
+                            </div>
+                            <p class="text-gray-600 mb-6">
+                                The full Haven experience. Complete immersion in wellness with time to explore all our sanctuary has to offer.
+                            </p>
+                            <a href="/pages/contact.html" class="btn-primary">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Membership Section - Emphasized and Spanning Full Width -->
+                    <div class="relative">
+                        <!-- Subtle separator to create visual flow -->
+                        <div class="flex items-center justify-center mb-8">
+                            <div class="flex-1 border-t border-gray-200"></div>
+                            <br><br>
+                            <div class="px-4 text-center">
+                                <span class="pad-2 text-sm text-gray-500">Or save with our popular membership</span>
+                            </div>
+                            <br><br>
+                            <div class="flex-1 border-t border-gray-200"></div>
+                        </div>
+
+                        <!-- Enhanced Membership Card -->
+                        <div class="bg-gradient-to-r from-hibiscus-100 to-sage-100 rounded-2xl p-8 text-center relative shadow-xl border-2 border-hibiscus-200">
+                            <!-- Best Value Badge -->
+                            <div class="absolute pad-1 -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
+                                ✨ Best Value
+                            </div>
+                            
+                            <h3 class="text-3xl font-serif font-bold text-gray-900 mb-4 mt-4">Haven Membership</h3>
+                            <div class="text-5xl font-bold text-hibiscus-600 mb-4">$130<span class="text-xl text-gray-600">/month</span></div>
+                            
+                            <div class="bg-white rounded-xl p-6 mb-6 shadow-sm">
+                                <div class="text-lg text-gray-700 mb-4">
+                                    <strong>Includes:</strong> Two 60-minute Haven sessions per month
+                                </div>
+                                <div class="text-sm text-sage-700 mb-4">
+                                    <strong>Bonus:</strong> Additional $5 savings per session when combined with massage therapy
+                                </div>
+                                <div class="text-sm text-hibiscus-600 font-semibold">
+                                    💰 Save $10 per month compared to individual sessions
+                                </div>
+                            </div>
+                            
+                            <p class="text-gray-700 mb-8 max-w-2xl mx-auto">
+                                Perfect for regular wellness maintenance. Need more sessions? Contact us to create a custom membership plan tailored to your wellness goals.
+                            </p>
+                            
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="/pages/contact.html" class="pad-1 bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-hibiscus-700 hover:to-hibiscus-800 transition duration-300 shadow-lg">
+                                    Join Haven Membership
+                                </a>
+                                <a href="/pages/contact.html" class="pad-1 border-2 border-hibiscus-600 text-hibiscus-600 px-8 py-4 rounded-xl font-semibold hover:bg-hibiscus-50 transition duration-300">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits Section -->
+            <section class="bg-gray-50 section-padding">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 text-center mb-12">
+                        Why Choose The Haven?
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-hibiscus-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">No Hands-On Required</h3>
+                                <p class="text-gray-600">Perfect for clients who prefer wellness experiences without direct physical therapy - ideal for chiropractic patients seeking relaxation on their own terms.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-hibiscus-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Completely Private</h3>
+                                <p class="text-gray-600">Your own secluded sanctuary where you can fully disconnect from the outside world and focus entirely on your wellness journey.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-hibiscus-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Flexible & Customizable</h3>
+                                <p class="text-gray-600">Use alone for pure relaxation or combine with massage therapy for a comprehensive wellness experience that fits your unique needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-hibiscus-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Cutting-Edge Technology</h3>
+                                <p class="text-gray-600">Experience the latest in wellness technology with our zero gravity massage chair and upcoming infrared sauna therapy.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-hibiscus-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Stress Relief & Recovery</h3>
+                                <p class="text-gray-600">Designed specifically for deep relaxation, stress reduction, and physical recovery - perfect for busy professionals and athletes alike.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-hibiscus-600 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2">Mindful Wellness</h3>
+                                <p class="text-gray-600">Dedicated spaces for meditation, breathwork, and mindfulness practices to nurture both body and mind in one comprehensive experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white section-padding">
+                <div class="max-w-7xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">
+                        Ready to Escape to Your Haven?
+                    </h2>
+                    <p class="text-xl mb-8 max-w-2xl mx-auto">
+                        Discover a new dimension of wellness. Book your Haven experience today and step into your personal sanctuary of tranquility.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="/pages/contact.html" class="pad-1 bg-white text-hibiscus-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                            Book Your Haven Session
+                        </a>
+                        <a href="/pages/contact.html" class="pad-1 border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-hibiscus-600 transition duration-300">
+                            Learn About Membership
+                        </a>
+                    </div>
+                    <p class="text-sm mt-6 opacity-90">
+                        Questions about The Haven? <a href="/pages/contact.html" class="underline">Contact us</a> to learn more about this unique wellness experience.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                    <!-- Company Info -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Hibiscus Springs</h3>
+                        <p class="text-gray-400 mb-4">Therapeutic Massage</p>
+                        <p class="text-gray-400 text-sm">Healing Touch for Body & Mind</p>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                            <li><a href="/pages/about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                            <li><a href="/pages/servicesnew.html" class="text-gray-400 hover:text-white transition-colors">New Clients</a></li>
+                            <li><a href="/pages/servicesret.html" class="text-gray-400 hover:text-white transition-colors">Returning Clients</a></li>
+                            <li><a href="/pages/tmj.html" class="text-gray-400 hover:text-white transition-colors">TMJ Therapy</a></li>
+                            <li><a href="/pages/haven.html" class="text-gray-400 hover:text-white transition-colors">The Haven</a></li>
+                            <li><a href="/pages/contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Services -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/pages/servicesnew.html" class="text-gray-400 hover:text-white transition-colors">New Clients</a></li>
+                            <li><a href="/pages/servicesret.html" class="text-gray-400 hover:text-white transition-colors">Returning Clients</a></li>
+                            <li><a href="/pages/tmj.html" class="text-gray-400 hover:text-white transition-colors">TMJ Therapy</a></li>
+                            <li><a href="/pages/haven.html" class="text-gray-400 hover:text-white transition-colors">The Haven</a></li>
+                            <li><a href="/pages/faq.html" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Career & Contact -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Career & Contact</h4>
+                        <ul class="space-y-2">
+                            <!-- Temporarily removed during hiring freeze -->
+                            <!-- <li><a href="/pages/join-the-team.html" class="text-gray-400 hover:text-hibiscus-400 transition-colors font-medium">Join the Team</a></li> -->
+                            <li><a href="/pages/contact.html" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+                            <li><a href="tel:+1234567890" class="text-gray-400 hover:text-white transition-colors">Number Coming Soon</a></li>
+                            <li><a href="mailto:leslie@hstm.ca" class="text-gray-400 hover:text-white transition-colors">leslie@hstm.ca</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Bottom Bar -->
+                <div class="border-t border-gray-800 pt-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <div class="text-center md:text-left mb-4 md:mb-0">
+                            <p class="text-gray-400">&copy; 2025 Hibiscus Springs Therapeutic Massage. All rights reserved.</p>
+                        </div>
+                        <div class="flex space-x-6">
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a>
+                            <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Accessibility</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

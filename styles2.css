@@ -47,6 +47,15 @@ html {
 }
 
 /* Layout */
+
+.pad-1 {
+    padding: 1rem;
+}
+
+.pad-2 {
+    padding: 2rem;
+}
+
 .min-h-screen {
     min-height: 100vh;
 }
@@ -302,6 +311,11 @@ html {
 #hero-section {
     height: max-content;
     overflow: hidden;
+}
+
+.card_three_cross {
+    max-width: 400px
+
 }
 
 .cardFaqCont {
@@ -1477,8 +1491,8 @@ nav {
 /* Neumorphic Service Options */
 .pink-neu-card {
     border-radius: 48px;
-background: linear-gradient(145deg, #cb1a64, #ab1654);
-box-shadow:  26px 26px 52px #ba185b,
+    background: linear-gradient(145deg, #cb1a64, #ab1654);
+    box-shadow:  26px 26px 52px #ba185b,
              -26px -26px 52px #c2185f;
              max-width: 400px;
 
