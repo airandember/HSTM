@@ -1,6 +1,7 @@
 // Service Selection Modal
 const viewServicesBtn = document.getElementById('view-services-btn');
 const viewAllServicesBtn = document.getElementById('view-all-services-btn');
+const viewServicesBtn2 = document.getElementById('view-services-btn2');
 const serviceModal = document.getElementById('service-modal');
 const serviceModalOverlay = document.getElementById('service-modal-overlay');
 
@@ -17,6 +18,7 @@ function showServiceModal(e) {
 // Add click handlers to both buttons
 viewServicesBtn.addEventListener('click', showServiceModal);
 viewAllServicesBtn.addEventListener('click', showServiceModal);
+viewServicesBtn2.addEventListener('click', showServiceModal);
 
 // Close modal when clicking overlay
 serviceModalOverlay.addEventListener('click', (e) => {
