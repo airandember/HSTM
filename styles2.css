@@ -96,6 +96,10 @@ html {
     justify-content: space-between;
 }
 
+.justify-around {
+    justify-content: space-around;
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -228,6 +232,37 @@ html {
     margin: 0.25rem;
 }
 
+.mxw-100 {
+    max-width: 100%;
+}
+
+.mxw-250 {
+    max-width: 250px;
+}
+
+.mxw-300 {
+    max-width: 300px;
+}
+
+.mxw-400 {
+    max-width: 400px;
+}
+
+.mxw-500 {
+    max-width: 500px;
+}
+
+.mxh-250 {
+    max-height: 250px;
+}
+
+.mxh-400 {
+    max-height: 400px;
+}
+
+.w-100 {
+    width: 100%;
+}
 
 
 /* Colors */
@@ -245,6 +280,14 @@ html {
 
 .bg-hibiscus-100 {
     background-color: var(--hibiscus-100);
+}
+
+.bg-hibiscus-600 {
+    background-color: var(--hibiscus-600);
+}
+
+.bg-sage-600 {
+    background-color: var(--sage-600);
 }
 
 .text-white {
@@ -482,6 +525,11 @@ header {
 
 .rounded-full {
     border-radius: 9999px;
+}
+
+.wh-10 {
+    width: 10px;
+    height: 10px;
 }
 
 .w-24 {
@@ -1556,6 +1604,17 @@ nav {
     box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff;
     margin-bottom: 3rem;
     max-width: 550px;
+}
+
+.massage-card-flex-tall {
+    color:white;
+    background: var(--hibiscus-500);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff;
+    margin-bottom: 3rem;
+    max-width: 350px;
+    min-height: 400px;
 }
 
 .massage-title {
