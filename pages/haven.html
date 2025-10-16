@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles2.css">
     <script src="../scripts/menu.js" defer></script>
     <script src="../scripts/main.js" defer></script>
+    <script src="../scripts/countdown.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
@@ -84,7 +85,7 @@
                             Step into your personal sanctuary where healing meets tranquility, and discover a new dimension of wellness beyond the treatment table.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="/pages/contact.html" class="btn-primary">Book Your Haven Experience</a>
+                            <a href="#pricing" class="btn-primary">Book Your Haven Experience</a>
                             <a href="#pricing" class="btn-outline">View Pricing</a>
                         </div>
                     </div>
@@ -150,7 +151,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
                                 </svg>
                             </div>
-                            <h3 id="apparel" class="text-xl font-serif font-bold text-gray-900 mb-3">Infrared Sauna <sup><a href="#fyi">1</a></sup> <span class="text-sm text-hibiscus-600">(Coming Soon)</span></h3>
+                            <h3 id="apparel" class="text-xl font-serif font-bold text-gray-900 mb-3">Infrared Sauna <sup><a href="#fyi">1</a></sup> <!--<span class="text-sm text-hibiscus-600">(Coming Soon)</span>--></h3>
                             <p class="text-gray-600">
                                 Detoxify and rejuvenate with gentle infrared heat therapy. Perfect for muscle recovery, stress relief, and overall wellness enhancement.
                             </p>
@@ -255,9 +256,9 @@
                         </div>
                     </div>
 
-                    <!-- Membership Section - Emphasized and Spanning Full Width -->
-                    <div class="relative">
-                        <!-- Subtle separator to create visual flow -->
+                    <!-- Membership Section - Emphasized and Spanning Full Width 
+                    <div class="relative">-->
+                        <!-- Subtle separator to create visual flow 
                         <div class="flex items-center justify-center mb-8">
                             <div class="flex-1 border-t border-gray-200"></div>
                             <br><br>
@@ -266,11 +267,11 @@
                             </div>
                             <br><br>
                             <div class="flex-1 border-t border-gray-200"></div>
-                        </div>
+                        </div>-->
 
-                        <!-- Enhanced Membership Card -->
+                        <!-- Enhanced Membership Card 
                         <div id="havenMembership" class="bg-gradient-to-r from-hibiscus-100 to-sage-100 rounded-2xl p-8 text-center relative shadow-xl border-2 border-hibiscus-200">
-                            <!-- Best Value Badge -->
+                            Best Value Badge
                             <div class="absolute pad-1 -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">
                                 ✨ Best Value
                             </div>
@@ -297,12 +298,121 @@
                             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="/pages/contact.html" class="pad-1 bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-hibiscus-700 hover:to-hibiscus-800 transition duration-300 shadow-lg">
                                     Join Haven Membership
-                                </a>
+                                </a>-->
                                 <!-- <a href="/pages/contact.html" class="pad-1 border-2 border-hibiscus-600 text-hibiscus-600 px-8 py-4 rounded-xl font-semibold hover:bg-hibiscus-50 transition duration-300"> 
                                     Learn More
                                 </a>-->
+                            <!--</div>
+                        </div>-->
+                        
+                        <!-- HAVEN AD Landing Place -->
+                        <div id="HavenAD" class="max-w-2xl mx-auto mb-12">
+                            <div class="bg-gradient-to-br pad-2 from-hibiscus-600 to-hibiscus-700 rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-300">
+                                <!-- Card Header -->
+                                <div class="bg-white/10 backdrop-blur-sm px-8 py-6 pad-1 text-center border-b border-white/20">
+                                    <div class="flex items-center justify-center mb-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--yellow-100)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-300">
+                                            <circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 9.33-2.5"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class=" text-3xl md:text-4xl font-serif font-bold text-white mb-2">
+                                        The Haven Escape Key
+                                    </h3>
+                                    <p class="text-xl text-hibiscus-100 font-light italic">
+                                        Unlock a year of effortless self-care
+                                    </p>
+                                    <div id="ADCountDown"  style="max-width: 275px; margin: 0 auto;"></div>
+                                </div>
+
+                                <!-- Card Body -->
+                                <div class="px-8 py-8 text-white">
+                                    <!-- Main Feature -->
+                                    <div class="text-center mb-6 pb-6 border-b border-white/20">
+                                        <p class="text-lg font-medium mb-2">
+                                            Enjoy weekly access to The Haven
+                                        </p>
+                                        <p class="text-hibiscus-100">
+                                            Choose your sessions: <span class="font-semibold text-white">20, 40, or 60 minutes</span>
+                                        </p>
+                                    </div>
+
+                                    <!-- Terms & Conditions -->
+                                    <div class="space-y-3 mb-6 pb-6 border-b border-white/20">
+                                        <div class="flex items-start space-x-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-hibiscus-200 flex-shrink-0 mt-0.5">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span class="text-sm text-hibiscus-100">Reservations required</span>
+                                        </div>
+                                        <div class="flex items-start space-x-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-hibiscus-200 flex-shrink-0 mt-0.5">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span class="text-sm text-hibiscus-100">Maximum of 1 visit per week</span>
+                                        </div>
+                                        <div class="flex items-start space-x-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-hibiscus-200 flex-shrink-0 mt-0.5">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span class="text-sm text-hibiscus-100">Hold up to 3 reservations at a time</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Scarcity Message -->
+                                    <div class="bg-yellow-400/20 rounded-lg px-4 py-3 mb-6 border border-yellow-400/30">
+                                        <p class="text-center text-yellow-100 text-sm font-medium">
+                                            ⚠️ Very limited number of passes available this season
+                                        </p>
+                                    </div>
+
+                                    <!-- Pricing -->
+                                    <div class="text-center mb-16 pb-6 border-b border-white/20">
+                                        <div class="flex flex-row justify-center text-5xl md:text-6xl font-bold text-white text-center" style="margin:0; padding:0;">
+                                            <h2 class="text-center" style="margin:0; padding:0;">$1,200 <span class="text-sm text-hibiscus-200" style="margin:0; padding:0;">+ GST</p></h2>
+                                        </div>
+                                        <p class="text-xs text-hibiscus-100 italic" style="margin:0; padding:0;">
+                                            Annual pass • 52 weeks of wellness
+                                        </p>
+                                    </div>
+
+                                    <!-- Purchase Options -->
+                                    <div class="space-y-4">
+                                        <h4 class="text-center text-white font-semibold text-lg mb-4">
+                                            Ready to Secure Your Key?
+                                        </h4>
+                                        
+                                        <!-- Call/Text Option -->
+                                        <a href="tel:+17804461188" class="pad-1 block w-full bg-white text-hibiscus-600 px-6 py-4 rounded-xl font-semibold text-center hover:bg-hibiscus-50 transition duration-300 shadow-lg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-2 -mt-1">
+                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                            </svg>
+                                            Call or Text to Purchase
+                                        </a>
+<br>
+                                        <!-- E-transfer Option -->
+                                        <div class="pad-2 bg-white/10 backdrop-blur-sm rounded-xl px-6 py-4 border border-white/20">
+                                            <p class="text-center text-white font-semibold mb-2 text-sm">
+                                                Or send e-Transfer to:
+                                            </p>
+                                            <p class="text-center text-hibiscus-100 text-lg font-medium mb-1">
+                                                admin@hstm.ca
+                                            </p>
+                                            <p class="text-center text-hibiscus-200 text-xs italic">
+                                                Include "Haven Escape Key" in your transfer notes
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card Footer -->
+                                <div class="bg-white/5 backdrop-blur-sm px-8 py-4 text-center border-t border-white/10">
+                                    <p class="text-xs text-hibiscus-200">
+                                        Questions? <a href="/pages/contact.html" class="text-white hover:text-hibiscus-100 underline">Contact us</a> for more information
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                        
                         <p class="text-gray-400">* Prices do not include GST. Not ellible for billing to insurance.</p>
 
                         <p id="cancel"><a href="#fyi">Cancellation Policy<sup>2</a></sup> </p>
