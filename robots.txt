@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Disallow temporary/admin pages
+Disallow: /pages/email.html
+Disallow: /index2.0.html
+Disallow: /homepage.html
+
+# Sitemap location
+Sitemap: https://www.hstm.ca/sitemap.xml
+
+# Crawl-delay (optional - helps with server load)
+Crawl-delay: 1
+

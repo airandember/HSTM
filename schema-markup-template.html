@@ -1,0 +1,266 @@
+<!-- 
+  ====================================================================
+  SCHEMA MARKUP FOR HIBISCUS SPRINGS THERAPEUTIC MASSAGE
+  ====================================================================
+  
+  INSTRUCTIONS:
+  Add this script to the <head> section of EVERY page, right before </head>
+  
+  Update the specific page details:
+  - Change "@id" and "url" for each page
+  - Update "name" and "description" for page-specific content
+  - Add page-specific schema types as needed
+  
+  ====================================================================
+-->
+
+<!-- LOCAL BUSINESS SCHEMA (Add to ALL pages) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "@id": "https://www.hstm.ca",
+  "name": "Hibiscus Springs Therapeutic Massage",
+  "alternateName": "HSTM",
+  "legalName": "Hibiscus Springs Therapeutic Massage",
+  "url": "https://www.hstm.ca",
+  "telephone": "+17804461188",
+  "email": "admin@hstm.ca",
+  "image": [
+    "https://www.hstm.ca/assets/images/HSTM_LF_PORTRAIT.webp",
+    "https://www.hstm.ca/assets/images/yellowhibiscus.webp"
+  ],
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.hstm.ca/assets/images/yellowhibiscus.webp",
+    "width": "85",
+    "height": "85"
+  },
+  "description": "Professional massage therapy in Leduc, Alberta specializing in TMJ therapy, deep tissue massage, Swedish massage, and wellness treatments. Registered Massage Therapists with 5+ years experience.",
+  "priceRange": "$$$",
+  "paymentAccepted": "Cash, Credit Card, Debit, E-Transfer, Insurance",
+  "currenciesAccepted": "CAD",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "#101 4413 48 Street",
+    "addressLocality": "Leduc",
+    "addressRegion": "AB",
+    "postalCode": "T9E 6X2",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "53.2532",
+    "longitude": "-113.5452"
+  },
+  "hasMap": "https://maps.google.com/?q=4413+48+Street+Leduc+AB",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Leduc",
+      "containedInPlace": {
+        "@type": "AdministrativeArea",
+        "name": "Alberta"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Edmonton"
+    },
+    {
+      "@type": "City",
+      "name": "Beaumont"
+    },
+    {
+      "@type": "City",
+      "name": "Nisku"
+    }
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "TMJ Therapy Massage",
+        "description": "Specialized jaw massage therapy for temporomandibular joint dysfunction relief"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Deep Tissue Massage",
+        "description": "Therapeutic deep tissue massage for muscle tension and pain relief"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Swedish Massage",
+        "description": "Relaxing massage using long strokes and kneading"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "The Haven Wellness Experience",
+        "description": "Private wellness sanctuary with zero gravity massage chair, meditation, and infrared sauna"
+      }
+    }
+  ],
+  "sameAs": [
+    "https://www.google.com/maps/place/Hibiscus+Springs+Therapeutic+Massage"
+  ]
+}
+</script>
+
+<!-- ====================================================================
+  ADDITIONAL SCHEMA TYPES FOR SPECIFIC PAGES
+  ==================================================================== -->
+
+<!-- FOR TMJ PAGE: Add Medical Procedure Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  "name": "TMJ Therapy Massage",
+  "alternateName": "Temporomandibular Joint Therapy",
+  "description": "Specialized intraoral and external jaw massage techniques for TMJ dysfunction relief",
+  "procedureType": "Therapeutic",
+  "followup": "Regular sessions recommended for chronic TMJ issues",
+  "preparation": "No special preparation required"
+}
+</script>
+
+<!-- FOR SERVICES PAGES: Add Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Massage Therapy",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "name": "Hibiscus Springs Therapeutic Massage",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "#101 4413 48 Street",
+      "addressLocality": "Leduc",
+      "addressRegion": "AB",
+      "postalCode": "T9E 6X2",
+      "addressCountry": "CA"
+    }
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Leduc"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Massage Therapy Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "TMJ Therapy - 75 minutes"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Therapeutic Massage - 60 minutes"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Therapeutic Massage - 90 minutes"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<!-- FOR ABOUT PAGE: Add Person/Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Leslie",
+  "jobTitle": "Registered Massage Therapist",
+  "worksFor": {
+    "@type": "MedicalBusiness",
+    "name": "Hibiscus Springs Therapeutic Massage"
+  },
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional License",
+    "recognizedBy": {
+      "@type": "Organization",
+      "name": "College of Massage Therapists of Alberta"
+    }
+  },
+  "knowsAbout": [
+    "TMJ Therapy",
+    "Deep Tissue Massage",
+    "Swedish Massage",
+    "Therapeutic Massage"
+  ]
+}
+</script>
+
+<!-- FOR JOB POSTING PAGE: Add JobPosting Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "Registered Massage Therapist",
+  "description": "Seeking an exceptional Registered Massage Therapist in Leduc, Alberta. Contract position with flexible part-time or full-time hours.",
+  "datePosted": "2025-01-17",
+  "validThrough": "2025-10-25",
+  "employmentType": "CONTRACTOR",
+  "hiringOrganization": {
+    "@type": "MedicalBusiness",
+    "name": "Hibiscus Springs Therapeutic Massage",
+    "sameAs": "https://www.hstm.ca"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "#101 4413 48 Street",
+      "addressLocality": "Leduc",
+      "addressRegion": "AB",
+      "postalCode": "T9E 6X2",
+      "addressCountry": "CA"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "CAD",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": 25,
+      "maxValue": 40,
+      "unitText": "HOUR"
+    }
+  },
+  "qualifications": "Registered Massage Therapist in good standing (2,200 hours or equivalent)",
+  "responsibilities": "Therapeutic massage services including deep tissue work and/or cupping therapy",
+  "benefits": "Above-average compensation, wellness room access, flexible scheduling, professional development"
+}
+</script>
+
