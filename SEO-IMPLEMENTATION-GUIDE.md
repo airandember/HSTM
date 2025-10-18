@@ -205,7 +205,7 @@
 | Services (New) | Services \| HSTM | Massage Services Leduc \| New Clients \| Hibiscus Springs RMT |
 | Services (Ret) | Services \| HSTM | Returning Clients \| Massage Therapy Leduc \| Book Appointment |
 | About | About \| HSTM | About Our RMT Team Leduc \| Massage Therapy Specialists |
-| Contact | Contact Us \| HSTM | Contact HSTM Leduc \| Massage Therapy Appointments \| 780-446-1188 |
+| Contact | Contact Us \| HSTM | Contact HSTM Leduc \| Massage Therapy Appointments \| 780-238-1340 |
 | FAQ | N/A | FAQ - Massage Therapy Questions \| Hibiscus Springs Leduc |
 | Careers | Join Our Team | Massage Therapist Jobs Leduc \| RMT Careers \| Hibiscus Springs |
 

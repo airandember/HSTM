@@ -41,7 +41,7 @@ This is THE most important local SEO task!
 **Complete This Info:**
 □ Business Name: Hibiscus Springs Therapeutic Massage  
 □ Address: #101 4413 48 Street, Leduc, AB T9E 6X2  
-□ Phone: (780) 446-1188  
+□ Phone: (780) 238-1340  
 □ Website: https://www.hstm.ca  
 □ Hours: Monday-Friday 9AM-6PM (adjust as needed)  
 

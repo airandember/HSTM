@@ -69,9 +69,9 @@ Every page now includes:
 - **Special Features:** Team credentials and specializations highlighted
 
 ### **7. Contact Page (pages/contact.html) ✓**
-- **Title:** Contact HSTM Leduc | Massage Therapy Appointments | (780) 446-1188
+- **Title:** Contact HSTM Leduc | Massage Therapy Appointments | (780) 238-1340
 - **Schema:** LocalBusiness with complete contact info and hours
-- **Focus Keywords:** contact massage therapist Leduc, 780-446-1188
+- **Focus Keywords:** contact massage therapist Leduc, 780-238-1340
 - **Special Features:** Phone number in title, map link, opening hours in schema
 
 ### **8. Careers Page (pages/join-the-team.html) ✓**
@@ -107,7 +107,7 @@ Every page now includes:
 - **LocalBusiness Schema** with:
   - Business name: Hibiscus Springs Therapeutic Massage
   - Address: #101 4413 48 Street, Leduc, AB T9E 6X2
-  - Phone: +1-780-446-1188
+  - Phone: +1-780-238-1340
   - Email: admin@hstm.ca
   - Geo coordinates: 53.2532, -113.5452
   - Service area: Leduc, Edmonton, Beaumont
