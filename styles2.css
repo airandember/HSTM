@@ -2124,6 +2124,11 @@ h1.text-center {
     line-height: 1.2;
 }
 
+iframe {
+    width: 100vw;
+    height: 100vh;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
     .ad-popup-container {
@@ -2147,6 +2152,18 @@ h1.text-center {
     .ad-text-overlay h3 {
         font-size: clamp(1.25rem, 6vw, 2rem);
         padding: 0 15px;
+    }
+    
+    .hiringtab {
+        position: fixed;
+        
+        top: 5px;
+        left: 50%;
+        z-index:100;
+    }
+
+    .mobile-menu {
+        z-index:102;
     }
 }
 
