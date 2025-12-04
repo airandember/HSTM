@@ -60,6 +60,14 @@ html {
     padding: 2rem;
 }
 
+.pad-sides-1 {
+ padding: 0 1rem;
+}
+
+.pad-sides-2 {
+    padding: 0 2rem;
+}
+
 .min-h-screen {
     min-height: 100vh;
 }
@@ -534,6 +542,21 @@ header {
 .wh-10 {
     width: 10px;
     height: 10px;
+}
+
+.wh-50 {
+    width: 50px;
+    height: 50px;
+}
+
+.wh-75-50 {
+    width: 75px;
+    height: 50px;
+}
+
+.wh-110-50 {
+    width: 110px;
+    height: 50px;
 }
 
 .w-24 {

@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="../styles2.css">
     <script src="../scripts/menu.js" defer></script>
     <script src="../scripts/main.js" defer></script>
+    <script src="../scripts/headfoot.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
@@ -70,63 +71,8 @@
 </head>
 <body>
     <div class="min-h-screen flex flex-col">
-        
+        <!-- Dynamic Header Loaded via JavaScript -->
         <div id="header"></div>
-        <header>
-            <nav>
-                <div class="nav-container">
-                    <div class="logo">
-                        <a href="/" class="text-2xl font-bold text-gray-800 text-gradient">HSTM</a>
-
-                    </div>
-                    
-                    <!-- Desktop Navigation -->
-                    <div class="desktop-nav">
-                        <div class="services-dropdown">
-                            <button class="dropdown-button">
-                                Reserve Session
-                                <svg class="dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="/pages/servicesnew.html">New Clients</a>
-                                <a href="/pages/servicesret.html">Returning Clients</a>
-                            </div>
-                        </div>
-                        <a href="/pages/tmj.html" class="nav-link">TMJ Therapy</a>
-                        <a href="/pages/haven.html" class="nav-link">The Haven</a>
-                        <a href="/pages/giftcards.html" class="nav-link">Gift Cards</a>
-                        <a href="/pages/about.html" class="nav-link">About</a>
-                        <a href="/pages/contact.html" class="nav-link">Contact</a>
-                    </div>
-
-                    <!-- Mobile menu button -->
-                    <div class="mobile-menu-button-container">
-                        <button type="button" id="mobile-menu-button" class="mobile-menu-button">
-                            <svg class="menu-icon" id="menu-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Mobile menu -->
-                <div class="mobile-menu" id="mobile-menu">
-                    <div class="mobile-menu-content">
-                        <h2>Reserve Session</h2>
-                        <a href="/pages/servicesret.html" class="mobile-nav-link">Returning Clients</a>
-                        <hr>
-                        <a href="/pages/tmj.html" class="mobile-nav-link">TMJ Therapy</a>
-                        <a href="/pages/haven.html" class="mobile-nav-link">The Haven</a>
-                        <a href="/pages/giftcards.html" class="mobile-nav-link">Gift Cards</a>
-                        <hr>
-                        <a href="/pages/about.html" class="mobile-nav-link">About</a>
-                        <a href="/pages/contact.html" class="mobile-nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
 
         <main class="main-content">
             <!-- Hero Section -->
