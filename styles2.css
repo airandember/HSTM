@@ -765,8 +765,13 @@ a {
     background: linear-gradient(to bottom right, var(--hibiscus-200), var(--sage-200));
 }
 
-.from-hibiscus-500.to-hibiscus-600 {
-    background: linear-gradient(to bottom right, var(--hibiscus-500), var(--hibiscus-600));
+.from-hibiscus-500.to-hibiscus-700 {
+    background: linear-gradient(to bottom right, var(--hibiscus-500), var(--hibiscus-700));
+}
+
+.from-sage-200-to-sage-700 {
+    background: linear-gradient(to bottom right, var(--sage-200), var(--sage-700));
+
 }
 
 .shadow-2xl {
