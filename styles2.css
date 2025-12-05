@@ -240,6 +240,18 @@ html {
     margin-bottom: 4rem;
 }
 
+.mt-05 {
+    margin-top: 0.5rem;
+}
+
+.mt-025 {
+    margin-top: 0.25rem;
+}
+
+mt-1 {
+    margin-top: 1rem;
+}
+
 .mt-12 {
     margin-top: 3rem;
 }
