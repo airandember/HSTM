@@ -1393,7 +1393,7 @@ nav {
     height: 4px;
     background: linear-gradient(to right, var(--hibiscus-50), var(--sage-50));
     color: black;
-    transition: all 0.3s ease;
+    transition: all 2.5s ease;
     border-radius: 2px;
 }
 
