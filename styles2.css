@@ -426,6 +426,16 @@ mt-1 {
     overflow: hidden;
 }
 
+.hoverStandard {
+    box-shadow: 0px 0px 0px white;
+    border-radius: 15px;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.hoverStandard:hover {
+    box-shadow: 5px 5px 15px rgba(13, 0, 83, 0.2);
+}
+
 .card_three_cross {
     max-width: 400px
 
@@ -763,6 +773,10 @@ a {
 
 .from-hibiscus-200.to-sage-200 {
     background: linear-gradient(to bottom right, var(--hibiscus-200), var(--sage-200));
+}
+
+.from-hibiscus-500.to-hibiscus-600 {
+    background: linear-gradient(to bottom right, var(--hibiscus-500), var(--hibiscus-600));
 }
 
 .from-hibiscus-500.to-hibiscus-700 {

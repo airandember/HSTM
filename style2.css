@@ -37,6 +37,15 @@
     color: #666;
 }
 
+.hoverStandard {
+    box-shadow: 10px 10px 10px black;
+    transition: box-shadow 1s ease-in-out;
+}
+
+.hoverStandard:hover {
+    box-shadow: 5px 5px 15px black;
+}
+
 @media only screen and (max-width: 1200px) {
     .cardFaqCont {
         grid-template-columns: repeat(3, 1fr);
