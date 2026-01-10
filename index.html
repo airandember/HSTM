@@ -339,6 +339,81 @@
                                 <span class="font-semibold">$110</span>
                             </div>-->
                         </div>
+                        
+                        <!-- Sound Healing Coming Soon Teaser -->
+                        <div class="sound-healing-card card p-6" style="grid-column: 2; background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 50%, #f5e6ff 100%); border: 2px dashed #9ca3af; position: relative; z-index: 1;">
+                            <!-- Sound Wave Pulses -->
+                            <div class="sound-wave-container">
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                                <div class="sound-wave"></div>
+                            </div>
+                            
+                            <div style="position: absolute; top: 30px; right: -45px; border-radius: 25px; background: linear-gradient(90deg, #8b5cf6, #6366f1); color: white; padding: 4px 40px; font-size: 11px; font-weight: bold; transform: rotate(45deg); text-transform: uppercase; letter-spacing: 1px; z-index: 2;">Coming Soon</div>
+                            
+                            <div class="text-center mb-4" style="position: relative; z-index: 2;">
+                                <span style="font-size: 48px;">🎵</span>
+                            </div>
+                            
+                            <h3 class="text-xl font-semibold mb-2 text-center" style="color: #6366f1; position: relative; z-index: 2;">Sound Healing</h3>
+                            <p class="text-gray-600 mb-4 text-center" style="position: relative; z-index: 2;">Enveloping sound to restore balance, reduce stress, and promote deep healing.</p>
+                            
+                            <p class="text-center text-sm font-medium" style="color: #8b5cf6; position: relative; z-index: 2;">✨ Stay tuned for launch details ✨</p>
+                        </div>
+                        
+                        <style>
+                            .sound-wave-container {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 100%;
+                                height: 100%;
+                                pointer-events: none;
+                                z-index: 0;
+                            }
+                            
+                            .sound-wave {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                border: 2px solid rgba(139, 92, 246, 0.2);
+                                border-radius: 50%;
+                                animation: soundPulse 15s ease-out infinite;
+                            }
+                            
+                            .sound-wave:nth-child(1) {
+                                animation-delay: 0s;
+                            }
+                            
+                            .sound-wave:nth-child(2) {
+                                animation-delay: 5s;
+                            }
+                            
+                            .sound-wave:nth-child(3) {
+                                animation-delay: 10s;
+                            }
+                            
+                            @keyframes soundPulse {
+                                0% {
+                                    width: 60px;
+                                    height: 60px;
+                                    opacity: 0.6;
+                                    border-width: 32px;
+                                }
+                                100% {
+                                    width: 600px;
+                                    height: 600px;
+                                    opacity: 0;
+                                    border-width: 1px;
+                                }
+                            }
+                            
+                            .sound-healing-card {
+                                overflow: visible !important;
+                            }
+                        </style>
                     </div>
 
                     <div class="text-center mt-12">
@@ -422,7 +497,7 @@
                                     </div>
                                     <div class="pad-2">
                                         <h4 class="text-lg font-semibold text-gray-900">Flexible Sessions</h4>
-                                        <p class="text-gray-600">20, 40, or 60-minute experiences</p>
+                                        <p class="text-gray-600">30, 45, or 60-minute experiences</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center space-x-4 mb-4">
