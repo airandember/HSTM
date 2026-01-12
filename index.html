@@ -341,7 +341,7 @@
                         </div>
                         
                         <!-- Sound Healing Coming Soon Teaser -->
-                        <div class="sound-healing-card card p-6" style="grid-column: 2; background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 50%, #f5e6ff 100%); border: 2px dashed #9ca3af; position: relative; z-index: 1;">
+                        <div class="sound-healing-card card p-6" style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 50%, #f5e6ff 100%); border: 2px dashed #9ca3af; position: relative; z-index: 1;">
                             <!-- Sound Wave Pulses -->
                             <div class="sound-wave-container">
                                 <div class="sound-wave"></div>
@@ -412,6 +412,13 @@
                             
                             .sound-healing-card {
                                 overflow: visible !important;
+                            }
+                            
+                            /* Only center in column 2 on large screens (3-column grid) */
+                            @media (min-width: 1024px) {
+                                .sound-healing-card {
+                                    grid-column: 2;
+                                }
                             }
                         </style>
                     </div>
