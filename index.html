@@ -136,6 +136,104 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
+        /* Haven Update: fixed tab + panel (avoid % transform on max-width flex) */
+        .haven-update-tab {
+            position: fixed;
+            top: 28vh;
+            right: 0;
+            z-index: 10052;
+            width: 2.75rem;
+            min-height: 9rem;
+            margin: 0;
+            padding: 0.75rem 0;
+            border: none;
+            border-radius: 0.5rem 0 0 0.5rem;
+            background: linear-gradient(180deg, #c026d3 0%, #a21caf 100%);
+            color: #fff;
+            font-family: "Inter", system-ui, sans-serif;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            cursor: pointer;
+            line-height: 1.2;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), -4px 4px 16px rgba(0, 0, 0, 0.12);
+        }
+        .haven-update-tab:hover,
+        .haven-update-tab:focus-visible {
+            filter: brightness(1.06);
+            outline: 2px solid #fff;
+            outline-offset: -2px;
+        }
+        .haven-update-panel {
+            position: fixed;
+            top: 28vh;
+            right: -0.25rem;
+            z-index: 10051;
+            width: min(22rem, calc(100vw - 3.25rem));
+            max-height: min(70vh, 28rem);
+            overflow-y: auto;
+            box-sizing: border-box;
+            background: #fff;
+            border: 1px solid rgba(162, 28, 175, 0.2);
+            border-right: none;
+            border-radius: 0.5rem 0 0 0.5rem;
+            padding: 1rem 0.875rem 1rem 1rem;
+            font-family: "Inter", system-ui, sans-serif;
+            box-shadow: -6px 4px 20px rgba(0, 0, 0, 0.1);
+            transform: translateX(100%);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+        }
+        .haven-update-panel.is-open {
+            transform: translateX(-57px);
+            pointer-events: auto;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .haven-update-panel {
+                transition: none;
+            }
+        }
+        .haven-update-panel h3 {
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #86198f;
+            margin: 0 0 0.5rem 0;
+            padding-right: 1.75rem;
+        }
+        .haven-update-panel p {
+            margin: 0;
+            font-size: 0.9375rem;
+            line-height: 1.55;
+            color: #374151;
+        }
+        .haven-update-close {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+            border: none;
+            border-radius: 0.375rem;
+            background: transparent;
+            color: #6b7280;
+            font-size: 1.25rem;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .haven-update-close:hover,
+        .haven-update-close:focus-visible {
+            background: #f3f4f6;
+            color: #111827;
+            outline: none;
+        }
+
         @media (max-width: 375px) {
             #main-title-HS {
                 display: flex;
@@ -160,6 +258,42 @@
 
 </head>
 <body>
+    <aside class="haven-update-aside" aria-label="Haven availability update">
+        <div class="haven-update-panel" id="haven-update-panel" role="region" aria-labelledby="haven-update-heading" aria-hidden="true">
+            <button type="button" class="haven-update-close" id="haven-update-close" aria-label="Close Haven update">&times;</button>
+            <h3 id="haven-update-heading">The Haven Update</h3>
+            <p>TThe Haven experienced flooding from the floors above, so we’ve temporarily closed it for repairs. We’re already on it and will let you know as soon as everything is back to our usual standards.</p>
+        </div>
+        <button type="button" class="haven-update-tab" id="haven-update-tab" aria-expanded="false" aria-controls="haven-update-panel">Haven Update</button>
+    </aside>
+    <script>
+        (function () {
+            var tab = document.getElementById("haven-update-tab");
+            var panel = document.getElementById("haven-update-panel");
+            var closeBtn = document.getElementById("haven-update-close");
+            if (!tab || !panel) return;
+            function setOpen(open) {
+                panel.classList.toggle("is-open", open);
+                tab.setAttribute("aria-expanded", open ? "true" : "false");
+                panel.setAttribute("aria-hidden", open ? "false" : "true");
+            }
+            tab.addEventListener("click", function () {
+                setOpen(!panel.classList.contains("is-open"));
+            });
+            if (closeBtn) {
+                closeBtn.addEventListener("click", function () {
+                    setOpen(false);
+                    tab.focus();
+                });
+            }
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape" && panel.classList.contains("is-open")) {
+                    setOpen(false);
+                    tab.focus();
+                }
+            });
+        })();
+    </script>
     <div class="min-h-screen flex flex-col">
         <!-- Dynamic Header Loaded via JavaScript -->
         <div id="header"></div>
@@ -432,7 +566,7 @@
                 </div>
             </section>
 
-            <!-- Experience Haven Section -->
+            <!-- Experience Haven Section 
             <section class="section-padding bg-gradient-to-r from-sage-50 to-hibiscus-50">
                 <div class="max-w-7xl mx-auto">
                     <div class="text-center mb-12">
@@ -531,7 +665,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
 
             <!-- TMJ Specialization Highlight -->
             <section class="section-padding bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white">
