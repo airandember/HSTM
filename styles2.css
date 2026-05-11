@@ -482,7 +482,7 @@ mt-1 {
 .message-caveat {
     font-size: 0.875rem;
     color: var(--gray-500);
-    margin-top: 1rem;
+    margin-top: 0.1rem;
     font-style: italic;
 }
 
@@ -570,6 +570,40 @@ mt-1 {
 header {
     background: linear-gradient(to right, var(--hibiscus-50), var(--sage-50));
     border-bottom: 1px solid var(--sage-200);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Announcement Banner */
+.announcement-banner {
+    background-color: var(--hibiscus-100);
+    border-top: 1px solid var(--hibiscus-200);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.45rem 0;
+}
+
+.announcement-track {
+    display: inline-flex;
+    animation: marquee-scroll 28s linear infinite;
+}
+
+.announcement-track:hover {
+    animation-play-state: paused;
+}
+
+.announcement-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--hibiscus-700);
+    letter-spacing: 0.31em;
+    padding-right: 5rem;
+}
+
+@keyframes marquee-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 .max-w-7xl {
