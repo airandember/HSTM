@@ -35,3 +35,7 @@ yarn-error.log*
 
 # System Files
 Thumbs.db 
+
+# Folders
+.cursor
+/.cursor
