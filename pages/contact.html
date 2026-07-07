@@ -97,9 +97,9 @@
             </section>
 
             <!-- Contact Information -->
-            <section class="section-padding bg-white">
+            <section class="contact-info-section section-padding bg-white">
                 <div class="max-w-7xl mx-auto">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="contact_grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Phone -->
                         <a href="tel:+1234567890" class="hover:text-hibiscus-600" style="height: 100%; min-height: 250px;">
                             <div class="card p-6" style="height: 100%; min-height: 250px;">
@@ -198,7 +198,7 @@
             </section>
 
             <!-- Business Hours -->
-            <section class="flex flex-row section-padding bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white">
+            <section class="contact-operation-section flex flex-row section-padding bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white">
                 <div class="max-w-7xl mx-auto" style="display: flex; flex-direction: column; justify-content: center;">
                     <h2 class="text-3xl md:text-4xl font-serif font-bold mb-12 text-center">Operating Days</h2>
                     <p class="text-center text-gray-300 mb-8">All Sessions are Appointment Only. No walk-ins.</p>
@@ -357,6 +357,16 @@
 </body>
     <style>
         /* Custom styles for the contact page */
+
+        /* Business Section  */
+        .contact-operation-section {
+            background: linear-gradient(135deg, #e46363 0%, #f7b2d1 100%) !important;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
         .calendar-week {
             border: 2px solid white;
         }
@@ -389,6 +399,41 @@
 
         .calendar-day .inactive {
             background: rgba(255, 0, 0, 0.9);
+        }
+
+        @media (max-width: 1201px) {
+            .contact-info-section {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contact_grid {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contact-operation-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .calendar-week {
+                width: 100%;
+                overflow-x: auto;
+            }
+            .calendar-day {
+                width: 4rem;
+            }
+
+            .contact_main iframe {
+                width: 100% !important;
+                height: 300px !important;
+            }
         }
 
     </style>    
