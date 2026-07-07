@@ -201,7 +201,7 @@
             <section class="contact-operation-section flex flex-row section-padding bg-gradient-to-r from-hibiscus-600 to-hibiscus-700 text-white">
                 <div class="max-w-7xl mx-auto" style="display: flex; flex-direction: column; justify-content: center;">
                     <h2 class="text-3xl md:text-4xl font-serif font-bold mb-12 text-center">Operating Days</h2>
-                    <p class="text-center text-gray-300 mb-8">All Sessions are Appointment Only. No walk-ins.</p>
+                    <p class="text-center text-2xl mb-8">All Sessions are Appointment Only. No walk-ins.</p>
                     <div class="max-w-lg mx-auto">
                         <div class="flex flex-row flex-no-wrap justify-between items-center max-w-2xl mx-auto">
                             <!--<div class="text-right">
@@ -389,17 +389,20 @@
             font-weight: bold;
         }
         .calendar-day div {
+            
             height: 6rem;
             width: 100%;
         }
 
         .calendar-day .active {
-            background: rgba(6, 255, 102, 0.9);
+            background: linear-gradient(135deg, #48d683 0%, #3a6e5f 100%) !important;
         }
 
         .calendar-day .inactive {
-            background: rgba(255, 0, 0, 0.9);
+            background: linear-gradient(135deg, #e46363 0%, #8a006c 100%) !important;
         }
+
+     
 
         @media (max-width: 1201px) {
             .contact-info-section {
